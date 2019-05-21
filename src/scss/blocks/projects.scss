@@ -1,8 +1,11 @@
 .projects {
   display: flex;
+  flex-direction: column;
 
   &__inner {
-    //display: flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     flex-wrap: wrap;
@@ -10,10 +13,19 @@
   }
 
   &__demo {
-    width: 400px;
+    flex-basis: 100%;
+    //width: 400px;
     height: 500px;
     background-color: #B4B4B4;
     margin-bottom: 50px;
+
+    @media (min-width: $screen-sm) {
+      flex-basis: 48%;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 30%;
+    }
   }
 
   
