@@ -1,17 +1,20 @@
 .projects {
+  display: flex;
 
   &__inner {
-    display: flex;
+    //display: flex;
+    margin: 0 auto;
+    padding: 0;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__demo {
-    width: 30%;
+    width: 400px;
     height: 500px;
     background-color: #B4B4B4;
+    margin-bottom: 50px;
   }
 
-  &__demo:not(:last-child) {
-    margin-right: 10px;
-  }
+  
 }
