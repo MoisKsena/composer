@@ -1,0 +1,17 @@
+.projects {
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__demo {
+    width: 30%;
+    height: 500px;
+    background-color: #B4B4B4;
+  }
+
+  &__demo:not(:last-child) {
+    margin-right: 10px;
+  }
+}

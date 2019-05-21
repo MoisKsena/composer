@@ -1,0 +1,20 @@
+.about {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0 auto;
+  min-height: 750px;
+
+  &__image {
+    width: 50%;
+    background-color: #B4B4B4;
+  }
+
+  &__content {
+    width: 50%;
+    background-color: #4F4F4F;
+  }
+
+  &__content-text {
+  }
+}

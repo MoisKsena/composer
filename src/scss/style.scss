@@ -1,0 +1,9 @@
+@import 'variables.scss';
+@import './node_modules/normalize.css/normalize';
+@import 'fonts.scss';
+@import 'global.scss';
+
+@import 'blocks/header.scss';
+@import 'blocks/about.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/projects.scss';
