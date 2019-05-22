@@ -441,18 +441,9 @@ button:hover {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .projects__demo {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
     background-color: #B4B4B4;
     margin-bottom: 50px; }
-    @media (min-width: 768px) {
-      .projects__demo {
-        -ms-flex-preferred-size: 48%;
-            flex-basis: 48%; } }
-    @media (min-width: 1280px) {
-      .projects__demo {
-        -ms-flex-preferred-size: 30%;
-            flex-basis: 30%; } }
   .projects__demo-slide {
     background-color: beige;
     padding: 50px;
