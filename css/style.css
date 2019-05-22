@@ -453,5 +453,9 @@ button:hover {
       .projects__demo {
         -ms-flex-preferred-size: 30%;
             flex-basis: 30%; } }
+  .projects__demo-slide {
+    background-color: beige;
+    padding: 50px;
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
