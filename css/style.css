@@ -421,6 +421,14 @@ button:hover {
   background-color: #fff;
   color: #4F4F4F; }
 
+.ymaps-layers-pane {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  filter: url(/img/filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */ }
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
