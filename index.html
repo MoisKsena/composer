@@ -2,23 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/svg4everybody.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <style>
     .red {
-      background-color:#000;
+      background-color: white;
     }
-    </style>
-  <script>
-    $(document).ready(function() {
-      $('.projects__demo').on('click', '.projects__demo-click', function() {
-        $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
-      });
-    });
-  </script>
-  <title>Roman Seliverstov</title>
+
+    .swiper-container {
+      width: 90%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+
+<title>Roman Seliverstov</title>
 </head>
 <body>
   <div class="wrapper">
@@ -26,10 +45,10 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--active">
-            <a class="main-nav__link" href="#">о нас</a>
+            <a class="main-nav__link" href="#about">о нас</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">проекты</a>
+            <a class="main-nav__link" href="#projects">проекты</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">партнеры</a>
@@ -41,43 +60,75 @@
       </nav>
       <div class="header__content">
           <h1 class="header__headline">Roman Seliverstov</h1>
-          <p class="header__signature">КОМПОЗИТОР | СОНГРАЙТЕР | РЕКОРД-ПРОДЮСЕР</p>
+          <p class="header__signature">COMPOSER | SONGWRITER | RECORD PRODUCER</p>
       </div>
     </header>
-    <section class="about">
-      <div class="about__image"></div>
+    <section class="about" id="about">
+      <div class="about__image">
+     
+      </div>
       <div class="about__content">
-        <p class="about__content-text">Композитор и рекорд-продюсер. 
-          Глава музыкального отдела кинокомпании BUBBLE STUDIOS. 
-          Со-основатель студии вирусного видео “Gaffy  Gaf Company”.
-          Рекламное лицо немецкого звукотехнического бренда Elysia. 
-        </p>
+        <p class="about__content-text">Композитор и рекорд-продюсер.</p>
+        <p class="about__content-text">Глава музыкального отдела кинокомпании BUBBLE STUDIOS.</p>
+        <p class="about__content-text">Со-основатель студии вирусного видео “Gaffy  Gaf Company”.</p>
+        <p class="about__content-text">Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
       </div>
     </section>
-    <section class="projects">
-      <h2>проекты</h2>
-      <div class="projects__inner">
-          <div class="projects__demo">
-            <h1 class="projects__demo-click">Project ... <dfn style="color:black; font-size: 18px;">развернуть</dfn><dfn style="color:#B4B4B4; font-size: 18px;">закрыть</dfn></h1>
-            <div class="projects__demo-slide">
-              <p>МАЙОР ГРОМ</p>
-              <div class="projects__demo-image"></div>
-              <p>Пора расстаться со старым компьютером!</p>
-              <p>Здесь может быть пояснение к проекту: например, какие именно услуги были выполнены</p>
-                <p>Какие-то особые интересные моменты</p>
-                <p>Впечатления участников</p>
-                <p>«Уровень студии Романа Селиверстова превзошел наши самые смелые ожидания, это абсолютно западный подход, идеальная четкость работы, превосходный результат». </p>
-            </div>
+    <section class="projects" id="projects">
+      <article class="projects__inner">
+        <div class="projects__demo">
+          <h3 class="projects__demo-name">МАЙОР ГРОМ</h3>
+          <div class="projects__demo-video">
+              <iframe class="projects__demo-iframe" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
           </div>
-          <div class="projects__demo">
-            <h1 class="projects__demo-click">Project ...</h1>
-            <div class="projects__demo-slide">
-            Этот рассказ про то, как я однажды пошел в лес за грибами и нашел волшебный чайник.
+          <p class="projects__demo-signature">Официальный трейлер № 1</p>
+          <p class="projects__demo-foto projects__demo-signature">Кадры из фильма</p>
+
+          <!-- <div class="projects__demo-gallery"> -->
+
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="img/project-1.png" alt="#" class="swiper-img">
+                  </div>
+                  <!-- <div class="swiper-slide">
+                      <img src="img/project-1.png" alt="#" class="swiper-img">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/project-1.png" alt="#" class="swiper-img">
+                  </div> -->
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                  <div class="swiper-slide">Slide 10</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+    
+          <!-- </div> -->
+
+          <p class="projects__demo-signature">Какие-то особые интересные моменты</p>
+          <p class="projects__demo-signature">В записи участвовал известный певец Эминем. Это уже второй его совместный проект с Романом Селиверстовым</p>
+          <div class="projects__demo-impressions">
+            <div class="projects__demo-impressions--text">
+              <p class="projects__demo-signature">Впечатления участников</p>
+              <p class="projects__demo-signature">«Уровень студии Романа Селиверстова превзошел наши самые смелые ожидания, это абсолютно западный подход, идеальная четкость работы, превосходный результат». </p>
+              <p class="projects__demo-signature">Эминем, певец</p>
             </div>
+            <div class="projects__demo-impressions--foto"></div>
+          </div> 
           </div>
-          
-      </div>
+      </article>       
     </section>
+    <section class="music"></section>
     <section class="partners">
       <h3>партнеры</h3>
     </section>
@@ -89,7 +140,20 @@
       <div class="contacts__map">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A32da50290c3ee694d943d6dca8a122c6dbbd1387faf044bc8754ac0847825116&amp;source=constructor" width="100%" height="680" frameborder="0"></iframe>      </div>
     </section>
-    <section class="feedback"></section>
+    <section class="feedback">
+        <div class="projects__demo">
+          
+          <h1 class="projects__demo-click">Условия обработки персональных данных</h1>
+          <div class="projects__demo-slide">
+          Этот рассказ про то, как я однажды пошел в лес за грибами и нашел волшебный чайник.
+          </div>
+        </div>
+    </section>
   </div>
+
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 </html>
