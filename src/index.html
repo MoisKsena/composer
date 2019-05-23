@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/svg4everybody.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <style>
     .red {
@@ -12,7 +14,7 @@
     }
 
     .swiper-container {
-      width: 100%;
+      width: 90%;
       height: 100%;
     }
     .swiper-slide {
@@ -43,10 +45,10 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--active">
-            <a class="main-nav__link" href="#">о нас</a>
+            <a class="main-nav__link" href="#about">о нас</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">проекты</a>
+            <a class="main-nav__link" href="#projects">проекты</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">партнеры</a>
@@ -61,7 +63,7 @@
           <p class="header__signature">COMPOSER | SONGWRITER | RECORD PRODUCER</p>
       </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__image">
      
       </div>
@@ -72,7 +74,7 @@
         <p class="about__content-text">Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <article class="projects__inner">
         <div class="projects__demo">
           <h3 class="projects__demo-name">МАЙОР ГРОМ</h3>
@@ -83,12 +85,19 @@
           <p class="projects__demo-signature">Официальный трейлер № 1</p>
           <p class="projects__demo-foto projects__demo-signature">Кадры из фильма</p>
 
-          <div class="projects__demo-gallery">
+          <!-- <div class="projects__demo-gallery"> -->
+
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">
+                      <img src="img/project-1.png" alt="#" class="swiper-img">
+                  </div>
+                  <!-- <div class="swiper-slide">
+                      <img src="img/project-1.png" alt="#" class="swiper-img">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/project-1.png" alt="#" class="swiper-img">
+                  </div> -->
                   <div class="swiper-slide">Slide 4</div>
                   <div class="swiper-slide">Slide 5</div>
                   <div class="swiper-slide">Slide 6</div>
@@ -99,8 +108,12 @@
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
-          </div>
+    
+          <!-- </div> -->
 
           <p class="projects__demo-signature">Какие-то особые интересные моменты</p>
           <p class="projects__demo-signature">В записи участвовал известный певец Эминем. Это уже второй его совместный проект с Романом Селиверстовым</p>
@@ -138,12 +151,7 @@
     </section>
   </div>
 
-  
-  <!-- Swiper JS -->
-  <!-- <script src="../dist/js/swiper.min.js"></script> -->
-
-
-  <!-- <script src="./js/swiper.min.js"></script> -->
+  <script src="./js/swiper.min.js"></script>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 

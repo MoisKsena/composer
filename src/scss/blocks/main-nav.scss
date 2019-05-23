@@ -1,0 +1,28 @@
+.main-nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__item {
+    margin-right: 15px;
+    margin-top: 62px;
+
+    &--active {
+    }
+  }
+
+  &__link {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
