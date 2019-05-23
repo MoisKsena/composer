@@ -12,3 +12,9 @@
     
   }
 }
+
+.ymaps-layers-pane {
+  filter: grayscale(100%);
+  filter: url(/img/filters.svg#grayscale); /* Firefox 3.5+ */
+  -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
