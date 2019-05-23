@@ -3,17 +3,14 @@
   flex-direction: column;
 
   &__inner {
-    display: flex;
-    flex-direction: row;
     margin: 0 auto;
     padding: 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: white;
   }
 
   &__demo {
     display: flex;
+    width: 100%;
     flex-direction: column;
   }
 
@@ -43,8 +40,8 @@
   &__demo-foto{}
 
   &__demo-gallery {
-    width: 100%;
-    position: relative;
+    margin: 0;
+    padding: 0;
   }
 
   &__demo-impressions {

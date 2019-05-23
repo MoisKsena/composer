@@ -1,26 +1,20 @@
-import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js';
+//import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js';
 
-//<!-- Initialize Swiper -->
-// var swiper = new Swiper('.swiper-container', {
-//   direction:	'horizontal',
-//   //loop: true,
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-// });
 
-$(document).ready(function () {
-  //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    slidesPerView: 3,
-    //loop: true
-  })
+
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
+
+
 
 //Скрыть/показать элемент по клику 
 $(document).ready(function() {

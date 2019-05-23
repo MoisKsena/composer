@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <script src="js/svg4everybody.min.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <style>
@@ -14,27 +15,16 @@
     }
 
     .swiper-container {
-      width: 90%;
+      display: flex;
+      width: 1200px;
       height: 100%;
     }
     .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
     }
+    
   </style>
 
 <title>Roman Seliverstov</title>
@@ -76,57 +66,58 @@
     </section>
     <section class="projects" id="projects">
       <article class="projects__inner">
-        <div class="projects__demo">
-          <h3 class="projects__demo-name">МАЙОР ГРОМ</h3>
-          <div class="projects__demo-video">
-              <iframe class="projects__demo-iframe" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          </div>
-          <p class="projects__demo-signature">Официальный трейлер № 1</p>
-          <p class="projects__demo-foto projects__demo-signature">Кадры из фильма</p>
-
-          <!-- <div class="projects__demo-gallery"> -->
-
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <img src="img/project-1.png" alt="#" class="swiper-img">
+          <div class="projects__demo">
+              <h3 class="projects__demo-name">МАЙОР ГРОМ</h3>
+              <div class="projects__demo-video">
+                  <!-- <iframe class="projects__demo-iframe" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                  <iframe width="90%" height="600" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p class="projects__demo-signature">Официальный трейлер № 1</p>
+              <p class="projects__demo-foto projects__demo-signature">Кадры из фильма</p>
+    
+              <div class="projects__demo-gallery">
+    
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="img/img2.jpg" alt="#">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="img/img1.jpg" alt="#">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="img/img4.jpg" alt="#">
+                      </div>
+                      <div class="swiper-slide"><img src="img/img3.jpg" alt="#"></div>
+                      <div class="swiper-slide"><img src="img/img4.jpg" alt="#"></div>
+                      <div class="swiper-slide"><img src="img/img5.jpg" alt="#"></div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                      <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
                   </div>
-                  <!-- <div class="swiper-slide">
-                      <img src="img/project-1.png" alt="#" class="swiper-img">
-                  </div>
-                  <div class="swiper-slide">
-                      <img src="img/project-1.png" alt="#" class="swiper-img">
-                  </div> -->
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
-                  <div class="swiper-slide">Slide 10</div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+        
               </div>
     
-          <!-- </div> -->
-
-          <p class="projects__demo-signature">Какие-то особые интересные моменты</p>
-          <p class="projects__demo-signature">В записи участвовал известный певец Эминем. Это уже второй его совместный проект с Романом Селиверстовым</p>
-          <div class="projects__demo-impressions">
-            <div class="projects__demo-impressions--text">
-              <p class="projects__demo-signature">Впечатления участников</p>
-              <p class="projects__demo-signature">«Уровень студии Романа Селиверстова превзошел наши самые смелые ожидания, это абсолютно западный подход, идеальная четкость работы, превосходный результат». </p>
-              <p class="projects__demo-signature">Эминем, певец</p>
-            </div>
-            <div class="projects__demo-impressions--foto"></div>
-          </div> 
-          </div>
-      </article>       
+              <p class="projects__demo-signature">Какие-то особые интересные моменты</p>
+              <p class="projects__demo-signature">В записи участвовал известный певец Эминем. Это уже второй его совместный проект с Романом Селиверстовым</p>
+              <div class="projects__demo-impressions">
+                <div class="projects__demo-impressions--text">
+                  <p class="projects__demo-signature">Впечатления участников</p>
+                  <p class="projects__demo-signature">«Уровень студии Романа Селиверстова превзошел наши самые смелые ожидания, это абсолютно западный подход, идеальная четкость работы, превосходный результат». </p>
+                  <p class="projects__demo-signature">Эминем, певец</p>
+                </div>
+                <div class="projects__demo-impressions--foto"></div>
+              </div> 
+              </div>
+      </article>
+   
     </section>
     <section class="music"></section>
     <section class="partners">
@@ -138,7 +129,8 @@
         <p class="contacts__address">г. Санкт-Петербург, набережная Крюкова канала, 12</p>
       </div>
       <div class="contacts__map">
-        <iframe class="ymaps-layers-pane" src="https://yandex.ru/map-widget/v1/?um=constructor%3A32da50290c3ee694d943d6dca8a122c6dbbd1387faf044bc8754ac0847825116&amp;source=constructor" width="100%" height="680" frameborder="0"></iframe>      </div>
+        <iframe class="ymaps-layers-pane" src="https://yandex.ru/map-widget/v1/?um=constructor%3A32da50290c3ee694d943d6dca8a122c6dbbd1387faf044bc8754ac0847825116&amp;source=constructor" width="100%" height="680" frameborder="0"></iframe>     
+      </div>
     </section>
     <section class="feedback">
         <div class="projects__demo">
@@ -151,9 +143,10 @@
     </section>
   </div>
 
-  <script src="./js/swiper.min.js"></script>
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
 
 </body>
 </html>
