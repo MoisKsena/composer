@@ -438,25 +438,14 @@ button:hover {
       -ms-flex-direction: column;
           flex-direction: column; }
   .projects__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     margin: 0 auto;
     padding: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     background-color: white; }
   .projects__demo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -481,8 +470,8 @@ button:hover {
     color: #000;
     font-size: 25px; }
   .projects__demo-gallery {
-    width: 100%;
-    position: relative; }
+    margin: 0;
+    padding: 0; }
   .projects__demo-impressions {
     display: -webkit-box;
     display: -ms-flexbox;
