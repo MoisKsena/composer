@@ -4,5 +4,48 @@
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
+  color: white;
+
+  &__form {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  &__form-headline {
+    width: 100%;
+  }
+
+  &__form-icons {
+  }
+
+  &__form-letter {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &--text {
+      width: 50%;
+    }
+
+    &--personal {
+      width: 45%;
+    }
+  }
+}
+
+ //свернуть div
+
+ &__demo-slide{
+  height: 150px;
   background-color: white;
+  display:none;
+}
+
+&__demo-click{
+  text-decoration: underline;
+  color: #000;
+}
 }

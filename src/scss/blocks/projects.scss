@@ -65,18 +65,3 @@
       background-position: bottom 0px right 0px;
     }
   }
-
-
-  //свернуть div
-
-  &__demo-slide{
-    height: 150px;
-    background-color: white;
-    display:none;
-  }
-
-  &__demo-click{
-    text-decoration: underline;
-    color: #000;
-  }
-}
