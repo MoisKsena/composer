@@ -40,6 +40,8 @@
   &__demo-foto{}
 
   &__demo-gallery {
+    display: block;
+    position: relative;
     margin: 0;
     padding: 0;
   }

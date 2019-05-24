@@ -1,5 +1,7 @@
 .feedback {
-  height: 100px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: white;
