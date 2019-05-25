@@ -470,6 +470,8 @@ button:hover {
     color: #000;
     font-size: 25px; }
   .projects__demo-gallery {
+    display: block;
+    position: relative;
     margin: 0;
     padding: 0; }
   .projects__demo-impressions {
@@ -501,9 +503,43 @@ button:hover {
     color: #000; }
 
 .feedback {
-  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: white; }
+  color: white; }
+  .feedback__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto; }
+  .feedback__form-headline {
+    width: 100%; }
+  .feedback__form-letter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .feedback__form-letter--text {
+      width: 50%; }
+    .feedback__form-letter--personal {
+      width: 45%; }
 
 /*# sourceMappingURL=style.css.map */

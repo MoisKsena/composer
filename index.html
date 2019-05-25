@@ -14,11 +14,16 @@
       background-color: white;
     }
 
-    .swiper-container {
-      display: flex;
-      width: 1200px;
+    html, body {
+      position: relative;
       height: 100%;
     }
+
+    .swiper-container {
+      width: 800px;
+      height: 100%;
+    }
+    
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -31,6 +36,7 @@
 </head>
 <body>
   <div class="wrapper">
+
     <header class="header">
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -79,22 +85,12 @@
     
                   <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                          <img src="img/img2.jpg" alt="#">
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="img/img1.jpg" alt="#">
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="img/img4.jpg" alt="#">
-                      </div>
+                      <div class="swiper-slide"><img src="img/img2.jpg" alt="#"></div>
+                      <div class="swiper-slide"><img src="img/img1.jpg" alt="#"></div>
+                      <div class="swiper-slide"><img src="img/img4.jpg" alt="#"></div>
                       <div class="swiper-slide"><img src="img/img3.jpg" alt="#"></div>
                       <div class="swiper-slide"><img src="img/img4.jpg" alt="#"></div>
                       <div class="swiper-slide"><img src="img/img5.jpg" alt="#"></div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
-                      <div class="swiper-slide">Slide 10</div>
                     </div>
                     
                     <div class="swiper-pagination"></div>
@@ -133,14 +129,39 @@
       </div>
     </section>
     <section class="feedback">
-        <div class="projects__demo">
-          
-          <h1 class="projects__demo-click">Условия обработки персональных данных</h1>
-          <div class="projects__demo-slide">
-          Этот рассказ про то, как я однажды пошел в лес за грибами и нашел волшебный чайник.
-          </div>
+      <div class="feedback__form">
+        <div class="feedback__form-headline">
+          <p>Связаться</p>
+          <p>Светлана Стахнёва</p>
+          <p>stakhnevasvetlana@gmail.com</p>
         </div>
+        <div class="feedback__form-icons"></div>
+        <form method="post" class="feedback__form-letter">
+          <fieldset class="feedback__form-letter--text">
+            <p>Вы можете оставить свое сообщение, и мы свяжемся с вами</p>
+            <textarea cols=80 rows=10 name="message" style="background-color: black; border: none; color: #fff;"></textarea> 
+          </fieldset>
+          <fieldset class="feedback__form-letter--personal" style="border: none;">
+            <p>Имя</p>  
+            <input type="text" id="username" name="text" size="20" maxlength="20" placeholder="введите Имя" style="height: 40px; background-color: black; border: solid 1px white; color: #fff;"><br>
+            <p>Телефон</p>
+            <input type="tel" value="+7 (___) ___ - __ - __" style="height: 40px; background-color: black; border: solid 1px white; color: #fff;"><br>
+            <button>отправить</button><br>
+            <input type="checkbox" name="" value="" checked><a href="#">Подтверждаю согласие на обработку персональных данных</a>
+          </fieldset>
+        </form>
+      </div>
+        
     </section>
+    <section>
+      <div class="projects__demo">
+        <h3 class="projects__demo-click">Условия обработки персональных данных</h3>
+        <div class="projects__demo-slide">
+        Этот рассказ про то, как я однажды пошел в лес за грибами и нашел волшебный чайник.
+        </div>
+      </div>
+    </section>
+    
   </div>
 
   <script src="js/swiper.min.js"></script>

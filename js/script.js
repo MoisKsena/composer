@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js';\nvar swiper = new Swiper('.swiper-container', {\n  slidesPerView: 3,\n  spaceBetween: 30,\n  freeMode: true,\n  loop: true,\n  pagination: {\n    el: '.swiper-pagination',\n    clickable: true\n  }\n}); //Скрыть/показать элемент по клику \n\n$(document).ready(function () {\n  $('.projects__demo').on('click', '.projects__demo-click', function () {\n    $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);\n  });\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("//import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js';\nvar swiper = new Swiper('.swiper-container', {\n  slidesPerView: 3,\n  spaceBetween: 130,\n  freeMode: true,\n  loop: true,\n  pagination: {\n    el: '.swiper-pagination',\n    clickable: true\n  },\n  autoplay: {\n    delay: 2500,\n    disableOnInteraction: false\n  }\n}); //Скрыть/показать элемент по клику \n\n$(document).ready(function () {\n  $('.projects__demo').on('click', '.projects__demo-click', function () {\n    $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);\n  });\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ })
 
