@@ -41,16 +41,16 @@ $('.music__player button').click(function () {
 	// переключение состояния плеера и смена картинки на кнопке - плей или пауза //'url(/images/play.png)'   'url(/images/pause.png)' 
 	if (audio.paused == false) {
 		audio.pause();
-    button.css('background', 'url(/img/play-button.png)');
+    button.css('background', 'url(../img/play-button.png)');
     button.css('background-size', 'cover');
 	} else {
 		audio.play();
-		button.css('background', 'url(/img/pause-button.svg)');
+		button.css('background', 'url(../img/pause-button.svg)');
 	}
 	
 	// по окончанию трека на кнопку устанавливается картинка плей
 	$(audio).on('ended', function() {
-		button.css('background', 'url(/img/play-button.svg)');
+		button.css('background', 'url(../img/play-button.svg)');
 	});
 	
 	// обновление текущей позиции воспроизведения
