@@ -46,11 +46,12 @@ $(document).ready(function() {
     // переключение состояния плеера и смена картинки на кнопке - плей или пауза //'url(/images/play.png)'   'url(/images/pause.png)' 
     if (audio.paused == false) {
       audio.pause();
-      button.css('background', 'url(../img/play-button.png)');
+      button.css('background', 'url(img/play-button.svg)');
       button.css('background-size', 'cover');
     } else {
       audio.play();
       button.css('background', 'url(img/pause-button.svg)');
+      button.css('background-size', 'cover');
     }  
   });
 
