@@ -7,9 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+
   <script src="js/svg4everybody.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
   <style>
     .red {
       background-color: white;
@@ -121,8 +125,10 @@
         <h3 class="music__name">МУЗЫКА</h3>
         <div class="music__block">
           <div class="music__track">
-            <div class="music__player">
+            <div class="music__player js--audio-wrap">
               <button class="music__player--button"></button>
+              <div class="progressbar">
+              </div>
               <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
               <span class="music__player--title">Shawn Mendes – Youth</span>
               <span class="music__player--duration">0:0</span>
@@ -152,6 +158,7 @@
               <span class="music__player--duration">0:0</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -204,9 +211,9 @@
   </div>
 
   <script src="js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
-
 
 </body>
 </html>
