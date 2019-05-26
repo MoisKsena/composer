@@ -36,16 +36,15 @@
   }
 }
 
- //свернуть div
+// //скрытое окно
+// .projects__demo-slide{
+//   height: 150px;
+//   background-color: white;
+//   display:none;
+// }
 
- &__demo-slide{
-  height: 150px;
-  background-color: white;
-  display:none;
-}
+// .projects__demo-click{
+//   text-decoration: underline;
+//   color: #000;
+// }
 
-&__demo-click{
-  text-decoration: underline;
-  color: #000;
-}
-}

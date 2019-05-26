@@ -52,6 +52,13 @@ function copyImg() {
 }
 exports.copyImg = copyImg;
 
+function copyMp3() {
+  return src(`${dir.src}mp3/*`)
+    .pipe(plumber())
+    .pipe(dest(`${dir.build}mp3/`));
+}
+exports.copyMp3 = copyMp3;
+
 function buildSvgSprite() {
   return src(`${dir.src}svgSprites/*.svg`)
     .pipe(svgmin(function (file) {
@@ -66,13 +73,6 @@ function buildSvgSprite() {
     .pipe(dest(`${dir.build}img/`));
 }
 exports.buildSvgSprite = buildSvgSprite;
-
-function copyBookImg() {
-  return src(`${dir.src}img/booksAll/*.{jpg,jpeg,png,gif,svg,webp}`)
-    .pipe(plumber())
-    .pipe(dest(`${dir.build}img/booksAll/`));
-}
-exports.copyBookImg = copyBookImg;
 
 function copyFonts() {
   return src(`${dir.src}fonts/*.{woff,woff2}`)
@@ -168,7 +168,7 @@ function serve() {
 }
 
 function buildSteps() {
-  return parallel(styles, copyHTML, copyImg, buildSvgSprite, copyBookImg, copyVendorsJs, copyVendorsCss, copyFonts, javascript);
+  return parallel(styles, copyHTML, copyImg, copyMp3, buildSvgSprite, copyVendorsJs, copyVendorsCss, copyFonts, javascript);
 }
 exports.default = series(
   clean,
