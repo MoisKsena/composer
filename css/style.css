@@ -542,8 +542,7 @@ button:hover {
     width: 50%;
     padding: 50px 0 50px 0; }
   .music__player {
-    width: 300px;
-    height: 80px;
+    width: 95%;
     margin: auto;
     padding: 15px;
     text-align: center;
@@ -555,8 +554,7 @@ button:hover {
     .music__player--button {
       width: 20px;
       height: 20px;
-      margin-top: 8px;
-      margin-left: 10px;
+      margin-right: 20px;
       background-image: url(../img/play-button.svg);
       background-size: cover;
       background-color: #fff;
@@ -566,9 +564,29 @@ button:hover {
       background-color: white; }
     .music__player--title {
       padding: 10px; }
+    .music__player--controls {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 16px;
+      padding: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
     .music__player--duration {
-      margin-left: 10px;
-      padding-top: 10px; }
+      margin-left: 10px; }
+
+.progressbar {
+  width: 80%; }
 
 .feedback {
   display: -webkit-box;
