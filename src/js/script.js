@@ -28,12 +28,8 @@ $(document).ready(function() {
 });
 
 
+
 //mp3 treck
-
-
-
-
-/////
 
 (function($) {
 	$(document).ready(function() {
@@ -86,6 +82,8 @@ $('.music__player audio').on('timeupdate', function() {
   
 });
 
+
+// ползунок
 $('.music__player .progressbar').slider({
   value: 0,
   stop: function( event, ui ) {
