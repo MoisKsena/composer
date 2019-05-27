@@ -637,6 +637,19 @@ button:hover {
       display: -ms-flexbox;
       display: flex;
       width: 45%; }
+    .feedback__form-letter--confirm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
   .feedback__modal {
     display: none; }
 
