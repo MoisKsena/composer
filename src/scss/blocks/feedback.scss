@@ -1,5 +1,6 @@
 .feedback {
   display: flex;
+  position: relative;
   width: 100%;
   flex-direction: column;
   margin-top: 50px;
@@ -35,5 +36,58 @@
       width: 45%;
     }
   }
+
+  &__modal {
+    display: none;
+  }
 }
 
+.js-modal {
+}
+.modal {
+
+  &--open {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  &__dialog {
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+  &__content {
+    position: relative;
+    color: black;
+    font-size: 50px;
+
+    &--btn {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      font-size: 20px;
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.overlay {
+  background: #000;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 90;
+  display: none;
+
+}

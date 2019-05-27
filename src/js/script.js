@@ -18,13 +18,48 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
+//modal open
+
+function showPopup() {
+  // let popupLayer = document.querySelector('.js');
+  let showPopup = document.querySelector('.feedback__modal');
+
+  showPopup.classList.add('modal--open');
+  // popupLayer.classList.add('js-modal-open');
+};
+
+function closePopup() {
+  // let popupLayer = document.querySelector('.js');
+  let closePopup = document.querySelector('.modal--open');
+
+  closePopup.classList.remove('modal--open');
+  // popupLayer.classList.remove('js-modal-open');
+};
+
+var page = document.querySelector(".js-modal");
+page.addEventListener('click', event => {
+  event.preventDefault();
+
+  showPopup();
+
+});
+
+var closeModal = document.querySelector(".modal__content--btn");
+closeModal.addEventListener('click', event => {
+  event.preventDefault();
+
+  closePopup();
+
+});
+
+
 //Скрыть/показать элемент по клику 
 
-$(document).ready(function() {
-  $('.projects__demo').on('click', '.projects__demo-click', function() {
-    $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
-  });
-});
+// $(document).ready(function() {
+//   $('.projects__demo').on('click', '.projects__demo-click', function() {
+//     $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
+//   });
+// });
 
 
 
