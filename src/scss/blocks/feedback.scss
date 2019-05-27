@@ -31,20 +31,9 @@
     }
 
     &--personal {
+      display: flex;
       width: 45%;
     }
   }
 }
-
-// //скрытое окно
-// .projects__demo-slide{
-//   height: 150px;
-//   background-color: white;
-//   display:none;
-// }
-
-// .projects__demo-click{
-//   text-decoration: underline;
-//   color: #000;
-// }
 

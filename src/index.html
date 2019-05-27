@@ -77,10 +77,12 @@
     </section>
     <section class="projects" id="projects">
       <article class="projects__inner">
+
+        <!-- начало макета проекта -->
           <div class="projects__demo">
               <h3 class="projects__demo-name">МАЙОР ГРОМ</h3>
               <div class="projects__demo-video">
-                  <!-- <iframe class="projects__demo-iframe" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <!-- здесь ссылка на youtube -->
                   <iframe width="90%" height="600" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <p class="projects__demo-signature">Официальный трейлер № 1</p>
@@ -90,6 +92,7 @@
     
                     <div class="swiper-container">
                       <div class="swiper-wrapper">
+                        <!-- слайды/фото для галереи -->
                         <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
                         <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
                         <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
@@ -117,6 +120,7 @@
                 <div class="projects__demo-impressions--foto"></div>
               </div> 
               </div>
+              <!-- конец макета проекта -->
       </article>
    
     </section>
@@ -124,7 +128,19 @@
       <div class="music__inner">
         <h3 class="music__name">МУЗЫКА</h3>
         <div class="music__block">
-
+          <!-- начало звуковой дорожки -->
+          <div class="music__track">
+            <div class="music__player">
+              <span class="music__player--title">Shawn Mendes – Youth</span><br>
+              <div class="music__player--controls">
+                <button class="music__player--button"></button>
+                <div class="progressbar"></div>
+                <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
+                <span class="music__player--duration">0:0</span>
+              </div>
+            </div>
+          </div>
+          <!-- конец звуковой дорожки -->
           <div class="music__track">
             <div class="music__player">
               <span class="music__player--title">Shawn Mendes – Youth</span><br>
@@ -149,30 +165,41 @@
             </div>
           </div>
 
-            <div class="music__track">
-              <div class="music__player">
-                <span class="music__player--title">Shawn Mendes – Youth</span><br>
-                <div class="music__player--controls">
-                  <button class="music__player--button"></button>
-                  <div class="progressbar"></div>
-                  <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
-                  <span class="music__player--duration">0:0</span>
-                </div>
+          <div class="music__track">
+            <div class="music__player">
+              <span class="music__player--title">Shawn Mendes – Youth</span><br>
+              <div class="music__player--controls">
+                <button class="music__player--button"></button>
+                <div class="progressbar"></div>
+                <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
+                <span class="music__player--duration">0:0</span>
               </div>
             </div>
-
-              <div class="music__track">
-                <div class="music__player">
-                  <span class="music__player--title">Shawn Mendes – Youth</span><br>
-                  <div class="music__player--controls">
-                    <button class="music__player--button"></button>
-                    <div class="progressbar"></div>
-                    <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
-                    <span class="music__player--duration">0:0</span>
-                  </div>
-                </div>
+          </div>
+          
+          <div class="music__track">
+            <div class="music__player">
+              <span class="music__player--title">Shawn Mendes – Youth</span><br>
+              <div class="music__player--controls">
+                <button class="music__player--button"></button>
+                <div class="progressbar"></div>
+                <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
+                <span class="music__player--duration">0:0</span>
               </div>
-       
+            </div>
+          </div>
+
+          <div class="music__track">
+            <div class="music__player">
+              <span class="music__player--title">Shawn Mendes – Youth</span><br>
+              <div class="music__player--controls">
+                <button class="music__player--button"></button>
+                <div class="progressbar"></div>
+                <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
+                <span class="music__player--duration">0:0</span>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -208,19 +235,14 @@
             <p>Телефон</p>
             <input type="tel" value="+7 (___) ___ - __ - __" style="height: 40px; background-color: black; border: solid 1px white; color: #fff;"><br>
             <button>отправить</button><br>
-            <input type="checkbox" name="" value="" checked><a href="#">Подтверждаю согласие на обработку персональных данных</a>
+            <input type="checkbox" name="" value="" checked>&nbsp;<a href="#">Подтверждаю согласие на обработку персональных данных</a>
           </fieldset>
         </form>
       </div>
         
     </section>
     <section>
-      <div class="projects__demo">
-        <h3 class="projects__demo-click">Условия обработки персональных данных</h3>
-        <div class="projects__demo-slide">
-        Этот рассказ про то, как я однажды пошел в лес за грибами и нашел волшебный чайник.
-        </div>
-      </div>
+     
     </section>
     
   </div>
