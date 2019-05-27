@@ -21,19 +21,19 @@ var swiper = new Swiper('.swiper-container', {
 //modal open
 
 function showPopup() {
-  // let popupLayer = document.querySelector('.js');
+  let popupLayer = document.querySelector('.overlay');
   let showPopup = document.querySelector('.feedback__modal');
 
   showPopup.classList.add('modal--open');
-  // popupLayer.classList.add('js-modal-open');
+  popupLayer.style.display = "block";
 };
 
 function closePopup() {
-  // let popupLayer = document.querySelector('.js');
+  let popupLayer = document.querySelector('.overlay');
   let closePopup = document.querySelector('.modal--open');
 
   closePopup.classList.remove('modal--open');
-  // popupLayer.classList.remove('js-modal-open');
+  popupLayer.style.display = "none";
 };
 
 var page = document.querySelector(".js-modal");
@@ -52,6 +52,16 @@ closeModal.addEventListener('click', event => {
 
 });
 
+var pageModal = document.querySelector(".overlay");
+pageModal.addEventListener('click', event => {
+    var popUp = document.querySelector(".modal--open");
+    var isInPopUp = popUp.contains(event.srcElement) || popUp == event.srcElement;
+    if (!isInPopUp) {
+      event.preventDefault();
+
+      closePopup();
+    };
+  });
 
 //Скрыть/показать элемент по клику 
 
