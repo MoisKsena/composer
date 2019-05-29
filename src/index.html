@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/swiper.min.css">
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 
 
   <script src="js/svg4everybody.min.js"></script>
@@ -131,10 +131,11 @@
           <!-- начало звуковой дорожки -->
           <div class="music__track">
             <div class="music__player">
-              <span class="music__player--title">Shawn Mendes – Youth</span><br>
+              
               <div class="music__player--controls">
                 <button class="music__player--button"></button>
-                <div class="progressbar"></div>
+                <span class="music__player--title">Shawn Mendes – Youth</span>
+                <!-- <div class="progressbar"></div> -->
                 <audio src="mp3/Shawn Mendes – Youth.mp3" preload="metadata"></audio>
                 <span class="music__player--duration">0:0</span>
               </div>
@@ -226,8 +227,8 @@
         <div class="feedback__form-icons"></div>
         <form method="post" class="feedback__form-letter">
           <fieldset class="feedback__form-letter--text">
-            <p>Вы можете оставить свое сообщение, и мы свяжемся с вами</p>
-            <textarea cols=80 rows=10 name="message" style="background-color: black; border: none; color: #fff;"></textarea> 
+            <!-- <p>Вы можете оставить свое сообщение, и мы свяжемся с вами</p> -->
+            <textarea class="feedback__form-letter--textarea" placeholder="Вы можете оставить свое сообщение, и мы свяжемся с вами" name="message"></textarea> 
           </fieldset>
           <fieldset class="feedback__form-letter--personal" style="border: none;">
             <p>Имя</p>  

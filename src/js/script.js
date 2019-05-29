@@ -54,7 +54,7 @@ closeModal.addEventListener('click', event => {
 
 var pageModal = document.querySelector(".overlay");
 pageModal.addEventListener('click', event => {
-    var popUp = document.querySelector(".modal--open");
+    var popUp = document.querySelector(".modal__content");
     var isInPopUp = popUp.contains(event.srcElement) || popUp == event.srcElement;
     if (!isInPopUp) {
       event.preventDefault();
