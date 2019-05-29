@@ -114,7 +114,7 @@ $('.music__player audio').on('timeupdate', function() {
   var player = $(this).parent();
   var duration = $('.music__player--duration', player);
   
-  var date = new Date(audio.currentTime * 1000);
+  var date = new Date(audio.duration - audio.currentTime * 1000);
   duration.html(date.getMinutes()+':'+date.getSeconds());
   
 
