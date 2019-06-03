@@ -307,6 +307,38 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Italic.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -320,12 +352,12 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  background-color: black; }
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0; }
+  font-family: Montserrat, sans-serif;
+  background-color: black;
+  background-image: url(../img/Presentation.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 40px right 0px; }
 
 h1, h2, h3 {
   color: #fff; }
@@ -345,18 +377,10 @@ button:hover {
   outline: 0;
   background-color: grey; }
 
-.header__content {
-  padding: 50px 0 50px 0;
-  margin: 0 auto;
-  text-align: center; }
-
-.header__headline {
-  font-size: 100px;
-  color: white; }
-
-.header__signature {
-  font-size: 18px;
-  color: white; }
+.header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px; }
 
 .main-nav {
   display: -webkit-box;
@@ -398,23 +422,28 @@ button:hover {
           flex-direction: row;
   margin: 0 auto;
   min-height: 750px; }
-  .about__image {
-    width: 100%;
-    height: 500px;
-    background-image: url(../img/RS-Presentation-6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom 0px right 0px; }
-  .about__image-foto {
-    width: 100%;
-    height: 500px; }
   .about__content {
     width: 100%;
     color: white;
     margin: 0;
-    padding: 245px 0 85px 0; }
-  .about__content-text {
+    padding: 245px 0 85px 0;
     text-align: center; }
+  .about__headline {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150px; }
+  .about__signature {
+    height: 171px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px; }
+  .about__content-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 153%; }
 
 .contacts__content {
   height: 200px;
@@ -436,12 +465,12 @@ button:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  background-color: white; }
   .projects__inner {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    padding: 0;
-    background-color: white; }
+    padding: 0; }
   .projects__demo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -509,9 +538,9 @@ button:hover {
           flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: white; }
+  color: white; }
   .music__inner {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -522,48 +551,37 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 30px;
-    color: black; }
+    padding-top: 136px;
+    padding-bottom: 64px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px; }
   .music__block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .music__track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 30%;
-    padding: 50px 0 50px 0; }
+    width: 70%; }
   .music__player {
     width: 95%;
     margin: auto;
-    padding: 15px;
+    padding-bottom: 15px;
     text-align: center;
-    background-color: white;
-    border: solid 1px grey;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6);
-            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6); }
+    border-bottom: solid 1px grey; }
     .music__player--button {
-      width: 20px;
-      height: 20px;
-      margin-right: 20px;
-      background-image: url(../img/play-button.svg);
+      width: 25px;
+      height: 25px;
+      margin-top: 25px;
+      background-image: url(../img/play-button-white.png);
       background-size: cover;
-      background-color: #fff;
       border: none;
       cursor: pointer; }
     .music__player--button:hover {
@@ -631,7 +649,14 @@ button:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
     .feedback__form-letter--text {
-      width: 50%; }
+      width: 60%;
+      min-height: 100%; }
+    .feedback__form-letter--textarea {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      border: none;
+      color: #fff; }
     .feedback__form-letter--personal {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -667,14 +692,17 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
-  margin: 0 auto;
-  background-color: #fff; }
+  margin: 0 auto; }
 
 .modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   color: black;
-  font-size: 50px; }
+  font-size: 50px;
+  padding: 10px;
+  background-color: #fff; }
   .modal__content--btn {
     position: absolute;
     top: 10px;
