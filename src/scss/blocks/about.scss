@@ -3,13 +3,12 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto;
-  min-height: 750px;
 
   &__content {
     width: 100%;
     color: white;
     margin: 0;
-    padding: 245px 0 85px 0;
+    padding: 0;
     text-align: center;
   }
 
@@ -29,9 +28,43 @@
   }
 
   &__content-text {
+    display: none;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
-    line-height: 153%;
+ 
+    &--link {
+      text-decoration-line: underline;
+      color: white;
+    }
+  }
+
+  &__content-inner {
+    width: 80%;
+    margin: 0 auto;
   }
 }
+
+// .text-js{
+//   opacity: 0;
+// }
+// .cursor{
+//   display: block;
+//   position: absolute;
+//   height: 100%;
+//   top: 8px;
+//   right: -5px;
+//   width: 2px;
+//   /* Change colour of Cursor Here */
+//   background-color: white;
+//   z-index: 1;
+//   animation: flash 0.5s none infinite alternate;
+// }
+// @keyframes flash{
+//   0%{
+//     opacity: 1;
+//   }
+//   100%{
+//     opacity: 0;
+//   }
+// }

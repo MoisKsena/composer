@@ -16,17 +16,12 @@ body {
   background-image: url(../img/Presentation.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top 40px right 0px;
-}
-
-h1, h2, h3 {
-  color: #fff;
+  background-position: top 40px left 0px;
 }
 
 a {
   text-decoration: none;
   list-style-type: none;
-  color: $link-color;
 }
 
 a:visited {

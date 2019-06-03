@@ -15,9 +15,9 @@
   <script src="js/svg4everybody.min.js"></script>
   
   <style>
-    .red {
+    /* .red {
       background-color: white;
-    }
+    } */
 
     html, body {
       position: relative;
@@ -45,82 +45,117 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--active">
-          <a class="main-nav__link" href="#about">о нас</a>
+          <a class="main-nav__link" href="#about">портфолио</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#projects">проекты</a>
+          <a class="main-nav__link" href="#projects">студии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">партнеры</a>
+          <a class="main-nav__link" href="#music">музыка</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">контакты</a>
+          <a class="main-nav__link" href="#partners">партнеры</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#contacts">контакты</a>
         </li>
       </ul>
     </nav>
     <div class="icons"></div>  
   </header>
+
   <section class="about" id="about">
     <div class="about__content">
       <h1 class="about__headline">Roman Seliverstov</h1>
       <p class="about__signature">COMPOSER | SONGWRITER | RECORD PRODUCER</p>
 
-      <p class="about__content-text">Композитор и рекорд-продюсер.</p>
-      <p class="about__content-text">Глава музыкального отдела кинокомпании BUBBLE STUDIOS.</p>
-      <p class="about__content-text">Со-основатель студии вирусного видео “Gaffy  Gaf Company”.</p>
-      <p class="about__content-text">Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
+      <div class="about__content-text" id="about__content-text">
+          <!-- <div class="about__content-inner"> -->
+              <div class="about__content-inner">
+                <p>Композитор и рекорд-продюсер.</p>
+                <!-- <p class="text-js">Композитор и рекорд-продюсер.</p> -->
+                <p>Глава музыкального отдела кинокомпании BUBBLE STUDIOS.</p>
+                <p>Со-основатель студии вирусного видео “Gaffy  Gaf Company”.</p>
+                <p>Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
+                <p>Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
+                <p>Страница Романа Селиверстова на сайте <a href="#" class="about__content-text--link">kinopoisk.ru</a></p> <a href=""></a>
+              </div>     
+          <!-- </div> -->
+      </div>
+
+      
     </div>
   </section>
+
   <section class="projects" id="projects">
-    <article class="projects__inner">
+    <h3 class="projects__name">Портфолио</h3>
+    <div class="projects__preview">
 
-      <!-- начало макета проекта -->
-        <div class="projects__demo">
-            <h3 class="projects__demo-name">МАЙОР ГРОМ</h3>
-            <div class="projects__demo-video">
-              <!-- здесь ссылка на youtube -->
-                <iframe width="90%" height="600" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="projects__demo-signature">Официальный трейлер № 1</p>
-            <p class="projects__demo-foto projects__demo-signature">Кадры из фильма</p>
-  
-            <div class="projects__demo-gallery">
-  
-                  <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                      <!-- слайды/фото для галереи -->
-                      <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
-                      <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
-                      <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-                      <div class="swiper-slide"><img class="projects__demo-foto" src="img/img3.jpg" alt="#"></div>
-                      <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-                      <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
-                    
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
-                  </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- слайды/фото для предпроссмотра -->
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+          
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
 
+    </div>
+
+    <!-- начало макета проекта -->
+    <div class="projects__demo">
+        <h4 class="projects__demo-name">МАЙОР ГРОМ</h4>
+        <div class="projects__demo-video">
+          <!-- здесь ссылка на youtube -->
+            <iframe width="90%" height="600" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="projects__demo-signature">Официальный трейлер № 1</p>
+        <p class="projects__demo-foto projects__demo-signature">Кадры из фильма</p>
+
+        <div class="projects__demo-gallery">
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- слайды/фото для галереи -->
+              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
+              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
+              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
+              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img3.jpg" alt="#"></div>
+              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
+              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
             </div>
-  
-            <p class="projects__demo-signature">Какие-то особые интересные моменты</p>
-            <p class="projects__demo-signature">В записи участвовал известный певец Эминем. Это уже второй его совместный проект с Романом Селиверстовым</p>
-            <div class="projects__demo-impressions">
-              <div class="projects__demo-impressions--text">
-                <p class="projects__demo-signature">Впечатления участников</p>
-                <p class="projects__demo-signature">«Уровень студии Романа Селиверстова превзошел наши самые смелые ожидания, это абсолютно западный подход, идеальная четкость работы, превосходный результат». </p>
-                <p class="projects__demo-signature">Эминем, певец</p>
-              </div>
-              <div class="projects__demo-impressions--foto"></div>
-            </div> 
-            </div>
-            <!-- конец макета проекта -->
-    </article>
-  
+            
+            <div class="swiper-pagination"></div>
+            
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+
+        </div>
+
+      <p class="projects__demo-signature">Какие-то особые интересные моменты</p>
+      <p class="projects__demo-signature">В записи участвовал известный певец Эминем. Это уже второй его совместный проект с Романом Селиверстовым</p>
+      <div class="projects__demo-impressions">
+        <div class="projects__demo-impressions--text">
+          <p class="projects__demo-signature">Впечатления участников</p>
+          <p class="projects__demo-signature">«Уровень студии Романа Селиверстова превзошел наши самые смелые ожидания, это абсолютно западный подход, идеальная четкость работы, превосходный результат». </p>
+          <p class="projects__demo-signature">Эминем, певец</p>
+        </div>
+        <div class="projects__demo-impressions--foto"></div>
+      </div> 
+    </div>
+        <!-- конец макета проекта -->
   </section>
-  <section class="music">
+
+  <section class="music" id="music">
     <div class="music__inner">
       <h3 class="music__name">МУЗЫКА</h3>
       <div class="music__block">
@@ -200,10 +235,12 @@
       </div>
     </div>
   </section>
-  <section class="partners">
-    <h3>партнеры</h3>
+
+  <section class="partners" id="partners">
+    <h3 class="partners__name">партнеры</h3>
   </section>
-  <section class="contacts">
+
+  <section class="contacts" id="contacts">
     <div class="contacts__content">
       <p class="contacts__headline">Адрес студии звукозаписи</p>
       <p class="contacts__address">г. Санкт-Петербург, набережная Крюкова канала, 12</p>
@@ -212,6 +249,7 @@
       <iframe class="ymaps-layers-pane" src="https://yandex.ru/map-widget/v1/?um=constructor%3A32da50290c3ee694d943d6dca8a122c6dbbd1387faf044bc8754ac0847825116&amp;source=constructor" width="100%" height="680" frameborder="0"></iframe>     
     </div>
   </section>
+
   <section class="feedback">
     <div class="feedback__form">
       <div class="feedback__form-headline">
@@ -246,10 +284,8 @@
         </div>
         <div class="overlay"></div>
       </div>
-        
 
-    </div>
-      
+    </div>    
   </section>
 
   <script src="js/jquery.min.js"></script>

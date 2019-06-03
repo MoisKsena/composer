@@ -1,18 +1,17 @@
 .projects {
   display: flex;
   flex-direction: column;
-  background-color: white;
 
-  &__inner {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
+  &__preview {
+    padding: 50px 0;
   }
 
   &__demo {
     display: flex;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     flex-direction: column;
+    background-color: white;
   }
 
   &__demo-name {
