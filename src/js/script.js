@@ -65,11 +65,11 @@ pageModal.addEventListener('click', event => {
 
 //Скрыть/показать элемент по клику 
 
-// $(document).ready(function() {
-//   $('.projects__demo').on('click', '.projects__demo-click', function() {
-//     $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
-//   });
-// });
+$(document).ready(function() {
+  $('.projects__demo').on('click', '.projects__demo-click', function() {
+    $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
+  });
+});
 
 
 
@@ -90,11 +90,11 @@ pageModal.addEventListener('click', event => {
     // переключение состояния плеера и смена картинки на кнопке - плей или пауза //'url(/images/play.png)'   'url(/images/pause.png)' 
     if (audio.paused == false) {
       audio.pause();
-      button.css('background-image', 'url(img/play-button.svg)');
+      button.css('background-image', 'url(img/play-button-white.png)');
       button.css('background-size', 'cover');
     } else {
       audio.play();
-      button.css('background-image', 'url(img/pause-button.svg)');
+      button.css('background-image', 'url(img/pause-button-white.png)');
       button.css('background-size', 'cover');
     }  
   });
@@ -103,7 +103,7 @@ pageModal.addEventListener('click', event => {
 $('.music__player audio').on('ended', function() {
     var player = $(this).parent();
     var button = $('button', player);
-    button.css('background-image', 'url(img/play-button.svg)');
+    button.css('background-image', 'url(img/play-button-white.png)');
   });
 
 

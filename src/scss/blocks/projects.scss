@@ -1,12 +1,12 @@
 .projects {
   display: flex;
   flex-direction: column;
+  background-color: white;
 
   &__inner {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding: 0;
-    background-color: white;
   }
 
   &__demo {

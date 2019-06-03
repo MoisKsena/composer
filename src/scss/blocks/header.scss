@@ -1,17 +1,11 @@
 .header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+
   &__content {
-    padding: 50px 0 50px 0;
-    margin: 0 auto;
-    text-align: center;
+    
   }
 
-  &__headline {
-    font-size: 100px;
-    color: white;
-  }
-
-  &__signature {
-    font-size: 18px;
-    color: white;
-  }
+  
 }

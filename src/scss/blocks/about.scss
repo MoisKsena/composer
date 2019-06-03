@@ -5,33 +5,33 @@
   margin: 0 auto;
   min-height: 750px;
 
-  &__image {
-    width: 100%;
-    height: 500px;
-    background-image: url(../img/RS-Presentation-6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom 0px right 0px;
-    //display: inline-block;
-  }
-
-  &__image-foto {
-    width: 100%;
-    height: 500px;
-    // background-image: url(../img/RS_Presentation.png);
-    // background-size: 30%;
-    //height: inherit;
-    //object-fit: cover;
-  }
-
   &__content {
     width: 100%;
     color: white;
     margin: 0;
     padding: 245px 0 85px 0;
+    text-align: center;
+  }
+
+  &__headline {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150px;
+  }
+
+  &__signature {
+    height: 171px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
   }
 
   &__content-text {
-    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 153%;
   }
 }
