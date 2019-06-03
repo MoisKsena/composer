@@ -357,15 +357,11 @@ body {
   background-image: url(../img/Presentation.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top 40px right 0px; }
-
-h1, h2, h3 {
-  color: #fff; }
+  background-position: top 40px left 0px; }
 
 a {
   text-decoration: none;
-  list-style-type: none;
-  color: #1a1ff7; }
+  list-style-type: none; }
 
 a:visited {
   background-color: white; }
@@ -378,6 +374,7 @@ button:hover {
   background-color: grey; }
 
 .header {
+  margin: 0 auto;
   font-style: normal;
   font-weight: 500;
   font-size: 12px; }
@@ -420,13 +417,12 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 auto;
-  min-height: 750px; }
+  margin: 0 auto; }
   .about__content {
     width: 100%;
     color: white;
     margin: 0;
-    padding: 245px 0 85px 0;
+    padding: 0;
     text-align: center; }
   .about__headline {
     font-size: 100px;
@@ -440,10 +436,17 @@ button:hover {
     font-weight: 500;
     font-size: 22px; }
   .about__content-text {
+    display: none;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 153%; }
+    font-size: 24px; }
+    .about__content-text--link {
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline;
+      color: white; }
+  .about__content-inner {
+    width: 80%;
+    margin: 0 auto; }
 
 .contacts__content {
   height: 200px;
@@ -465,21 +468,20 @@ button:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: white; }
-  .projects__inner {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0; }
+          flex-direction: column; }
+  .projects__preview {
+    padding: 50px 0; }
   .projects__demo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    background-color: white; }
   .projects__demo-name {
     margin-left: 5%;
     font-size: 50px;
