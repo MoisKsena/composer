@@ -29,6 +29,7 @@
 
   &__content-text {
     display: none;
+    //margin-top: 132px;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -40,31 +41,17 @@
   }
 
   &__content-inner {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
 
-// .text-js{
-//   opacity: 0;
-// }
-// .cursor{
-//   display: block;
-//   position: absolute;
-//   height: 100%;
-//   top: 8px;
-//   right: -5px;
-//   width: 2px;
-//   /* Change colour of Cursor Here */
-//   background-color: white;
-//   z-index: 1;
-//   animation: flash 0.5s none infinite alternate;
-// }
-// @keyframes flash{
-//   0%{
-//     opacity: 1;
-//   }
-//   100%{
-//     opacity: 0;
-//   }
-// }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
