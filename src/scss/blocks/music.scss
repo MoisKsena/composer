@@ -3,12 +3,16 @@
   width: 100%;
   flex-direction: column;
   margin-top: 136px;
-  margin-bottom: 222px;
   color: white;
+  background-image: url(../img/music.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom 0px right 0px;
 
   &__inner {
     padding-left: 276px;
     padding-right: 164px;
+    margin-bottom: 222px;
   }
 
   &__name {

@@ -34,6 +34,7 @@
     flex-direction: column;
 
     &--text {
+      margin: 0;
       min-height: 130px;
     }
 
@@ -59,7 +60,7 @@
     }
 
     &--personalnamefield {
-      width: 45%;
+      //width: 45%;
       height: 40px; 
       background-color: black; 
       border: solid 1px white; 
@@ -70,7 +71,7 @@
     }
 
     &--personaltelfield {
-      width: 45%;
+      //width: 45%;
       height: 40px; 
       background-color: black; 
       border: solid 1px white;
@@ -79,7 +80,8 @@
     &--personalbtn {
       width: 50%;
       height: 40px;
-      margin-top: 43px; 
+      margin-top: 43px;
+      margin-bottom: 14px; 
     }
 
     &--confirm {
@@ -141,5 +143,4 @@
   width: 100%;
   z-index: 90;
   display: none;
-
 }
