@@ -1,16 +1,26 @@
 .contacts {
   padding: 0;
-  width: 90%;
   margin: auto;
+  color: white;
 
   &__content {
+    width: 90%;
+    margin: auto;
     height: 200px;
-    color:  #4F4F4F;;
   }
+
   &__headline {
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 51px;
   }
+
   &__address {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
   }
+
   &__map {
     
   }

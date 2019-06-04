@@ -14,15 +14,22 @@ var swiper1 = new Swiper('.j-swiper-1', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  on:{
+    slideChange: function(){
+      let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
+      $(".img-description", ".img-descriptions").hide();
+      $(".img-description[data-image-id="+ imgId +"]", ".img-descriptions").fadeIn(3000);
+    }
+  }
 });
 
 
 var swiper2 = new Swiper('.j-swiper-2', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 5,
   freeMode: true,
   loop: true,
   pagination: {
@@ -35,6 +42,50 @@ var swiper2 = new Swiper('.j-swiper-2', {
   },
 });
 
+var swiper3 = new Swiper('.j-swiper-3', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  freeMode: true,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
+var swiper4 = new Swiper('.j-swiper-4', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  freeMode: true,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
+var swiper5 = new Swiper('.j-swiper-5', {
+  slidesPerView: 3,
+  spaceBetween: 15,
+  freeMode: true,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
 
 //show textblock
 
@@ -109,11 +160,11 @@ pageModal.addEventListener('click', event => {
 
 
   // обработчик нажатия на кнопку плей
-  $('.music__player button').click(function () {
+  $('.music__player--button').click(function () {
     var parent = $(this).parent();
     
     var button = $(this);
-    var audio = $('audio', parent)[0];
+    var audio = $('audio', parent[0])[0];
     var duration = $('.music__player--duration', parent);
     
     // переключение состояния плеера и смена картинки на кнопке - плей или пауза //'url(/images/play.png)'   'url(/images/pause.png)' 
@@ -121,7 +172,7 @@ pageModal.addEventListener('click', event => {
       audio.pause();
       button.css('background-image', 'url(img/play-button-white.png)');
       button.css('background-size', 'cover');
-    } else {
+    } else {//debugger 
       audio.play();
       button.css('background-image', 'url(img/pause-button-white.png)');
       button.css('background-size', 'cover');
