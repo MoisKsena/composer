@@ -1,21 +1,26 @@
 .feedback {
-  display: flex;
   position: relative;
   width: 100%;
-  flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 112px;
+  margin-bottom: 189px;
+  padding: 0;
   color: white;
 
   &__form {
     display: flex;
     width: 90%;
-    flex-direction: column;
+    flex-direction: row;
     margin: auto;
   }
 
   &__form-headline {
-    width: 100%;
+   // width: 100%;
+    &--sign {
+    }
+    &--name {
+    }
+    &--contacts {
+    }
   }
 
   &__form-icons {
@@ -24,12 +29,12 @@
   &__form-letter {
     display: flex;
     width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    margin-left: 123px;
+    padding: 0;
+    flex-direction: column;
 
     &--text {
-      width: 60%;
-      min-height: 100%;
+      min-height: 130px;
     }
 
     &--textarea {
@@ -42,14 +47,45 @@
 
     &--personal {
       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 100%;
+      padding: 0;
+      justify-content: space-between;
+    }
+
+    &--personalname {
+      
+    }
+
+    &--personalnamefield {
       width: 45%;
+      height: 40px; 
+      background-color: black; 
+      border: solid 1px white; 
+    }
+
+    &--personaltel {
+      
+    }
+
+    &--personaltelfield {
+      width: 45%;
+      height: 40px; 
+      background-color: black; 
+      border: solid 1px white;
+    }
+
+    &--personalbtn {
+      width: 50%;
+      height: 40px;
+      margin-top: 43px; 
     }
 
     &--confirm {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-between;
     }
   }
 

@@ -1,0 +1,17 @@
+.partners {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &__name {
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 51px;
+    color: white;
+  }
+  &__logo {
+  }
+}

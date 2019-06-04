@@ -1,5 +1,4 @@
-//import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js';
-
+//Swiper 
 
 var swiper1 = new Swiper('.j-swiper-1', {
   slidesPerView: 3,
@@ -16,7 +15,7 @@ var swiper1 = new Swiper('.j-swiper-1', {
     prevEl: '.swiper-button-prev',
   },
   autoplay: {
-    delay: 4000,
+    delay: 5000,
   },
 });
 
@@ -41,41 +40,11 @@ var swiper2 = new Swiper('.j-swiper-2', {
 
 $("#about__content-text").fadeIn(5000);
 
+//PORTFOLIO
 
-//autoType
+  // $(".img-description", ".img-descriptions").hide();
+  // $(".img-description[data-imageid="+ imageId +"]", ".img-descriptions").show();
 
-// function autoType(elementClass, typingSpeed){
-//   var thhis = $(elementClass);
-//   thhis.css({
-//     "position": "relative",
-//     "display": "block"
-//   });
-//  // thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
-//   thhis = thhis.find(".text-js");
-//   var text = thhis.text().trim().split('');
-//   var amntOfChars = text.length;
-//   var newString = "";
-//   //thhis.text("|");
-//   setTimeout(function(){
-//     thhis.css("opacity",1);
-//     thhis.prev().removeAttr("style");
-//     thhis.text("");
-//     for(var i = 0; i < amntOfChars; i++){
-//       (function(i,char){
-//         setTimeout(function() {        
-//           newString += char;
-//           thhis.text(newString);
-//         },i*typingSpeed);
-//       })(i+1,text[i]);
-//     }
-//   },1500);
-// }
-// $(document).ready(function(){
-//   // Now to start autoTyping just call the autoType function with the 
-//   // class of outer div
-//   // The second paramter is the speed between each letter is typed.   
-//   autoType(".type-js",100);
-// });
 
 //modal open
 
@@ -122,13 +91,14 @@ pageModal.addEventListener('click', event => {
     };
   });
 
+
 //Скрыть/показать элемент по клику 
 
-$(document).ready(function() {
-  $('.projects__demo').on('click', '.projects__demo-click', function() {
-    $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
-  });
-});
+// $(document).ready(function() {
+//   $('.projects__demo').on('click', '.projects__demo-click', function() {
+//     $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
+//   });
+// });
 
 
 

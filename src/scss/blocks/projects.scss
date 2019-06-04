@@ -1,23 +1,63 @@
 .projects {
   display: flex;
   flex-direction: column;
+  margin-top: 92px;
+
+  &__name {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 51px;
+    color: white;
+  }
 
   &__preview {
+    width: 95%;
+    margin: auto;
     padding: 50px 0;
   }
 
   &__demo {
     display: flex;
-    width: 80%;
+    padding-left: 276px;
+    padding-right: 164px;
     margin: 0 auto;
     flex-direction: column;
     background-color: white;
   }
 
-  &__demo-name {
-    margin-left: 5%;
+  &__demo-header {
+    display: flex;
+    margin: 0;
+    padding-top: 106px;
+    padding-bottom: 77px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__demo-sign {
+   
+    &--subtitle {
+    }
+
+    &--name {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
     font-size: 50px;
+    line-height: 59px;
     color: #000;
+    }
+
+    &--logo {
+    }
+  }
+  &__demo-logo {
+   
+    &--img {
+    }
   }
 
   &__demo-video {
@@ -25,47 +65,37 @@
     justify-content: center;
   }
 
-  &__demo-iframe {
-    width: 90%;
-    height: 675px;
-  }
-
   &__demo-signature {
-    margin-left: 5%;
-    padding-top: 10px;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 131px;
     color: #000;
-    font-size: 25px;
-  }
-
-  &__demo-foto{
-
+    font-weight: 600;
+    font-size: 18px;
   }
 
   &__demo-gallery {
     display: flex;
     width: 100%;  
     margin: 0;
-    padding: 0;
+    padding-top: 21px;
   }
 
+  &__demo-story {
+    width: 70%;
+    margin: 0;
+    padding-top: 113px;
+    padding-bottom: 92px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+  }
+  &__demo-name {
+  }
   &__demo-impressions {
-    display: flex;
-    margin-left: 2.5%;
-    min-height: 700px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
     &--text {
-      width: 50%;
     }
-
     &--foto {
-      width: 57%;
-      height: auto;
-      background-image: url(../img/project-1.png);
-      background-repeat: no-repeat;
-      //background-size: cover;
-      background-position: bottom 0px right 0px;
     }
   }
 }

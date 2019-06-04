@@ -2,14 +2,13 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 136px;
+  margin-bottom: 222px;
   color: white;
 
   &__inner {
-    width: 80%;
-    margin: 0 auto;
-    flex-direction: row;
+    padding-left: 276px;
+    padding-right: 164px;
   }
 
   &__name {
