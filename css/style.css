@@ -773,11 +773,20 @@ button:hover {
 
 .contacts {
   padding: 0;
-  width: 90%;
-  margin: auto; }
+  margin: auto;
+  color: white; }
   .contacts__content {
-    height: 200px;
-    color: #4F4F4F; }
+    width: 90%;
+    margin: auto;
+    height: 200px; }
+  .contacts__headline {
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 51px; }
+  .contacts__address {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%; }
 
 .ymaps-layers-pane {
   -webkit-filter: grayscale(100%);
