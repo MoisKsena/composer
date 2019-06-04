@@ -88,6 +88,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
+      align-items: center;
     }
   }
 
@@ -143,4 +144,15 @@
   width: 100%;
   z-index: 90;
   display: none;
+}
+
+.personal {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: white;
+}
+
+.personal span {
+  text-decoration-line: underline; 
 }
