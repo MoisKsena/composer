@@ -348,6 +348,10 @@ html {
           box-sizing: inherit;
   list-style-type: none; }
 
+html, body {
+  position: relative;
+  height: 100%; }
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -445,8 +449,16 @@ button:hover {
               text-decoration-line: underline;
       color: white; }
   .about__content-inner {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px; }
 
 .contacts__content {
   height: 200px;
