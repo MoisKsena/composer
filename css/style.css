@@ -722,7 +722,10 @@ button:hover {
           -ms-flex-direction: row;
               flex-direction: row;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
   .feedback__modal {
     display: none; }
 
@@ -770,6 +773,16 @@ button:hover {
   width: 100%;
   z-index: 90;
   display: none; }
+
+.personal {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: white; }
+
+.personal span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline; }
 
 .contacts {
   padding: 0;
