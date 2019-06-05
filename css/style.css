@@ -378,38 +378,127 @@ button:hover {
   background-color: grey; }
 
 .header {
-  margin: 0 auto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px; }
+  margin: 0 auto; }
 
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .main-nav__burger {
+    display: none;
     margin: 0;
     padding: 0; }
+    @media (max-width: 760px) {
+      .main-nav__burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        width: 20px;
+        top: 30px;
+        right: 46px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        background-color: transparent;
+        border: none;
+        cursor: pointer; } }
+    .main-nav__burger span.line {
+      display: inline-block;
+      margin-bottom: 4px;
+      background-color: #fff;
+      width: 100%;
+      height: 3px; }
+  .main-nav__burger:hover {
+    background-color: transparent; }
+  .main-nav__burger-menu {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    padding: 10px;
+    background-color: #fff;
+    line-height: 1.5;
+    opacity: 0.9;
+    z-index: 2; }
+    @media (min-width: 760px) {
+      .main-nav__burger-menu {
+        display: none; } }
+  .main-nav__burger-list {
+    display: none; }
+    @media (max-width: 760px) {
+      .main-nav__burger-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end; } }
+  .main-nav__burger-item {
+    margin: 0;
+    padding-bottom: 20px;
+    padding-right: 22px;
+    padding-left: 20px;
+    font-size: 20px; }
+  .main-nav__burger-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500; }
+  .main-nav__burger-link:hover {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #494949;
+    font-weight: 700; }
+  .main-nav__list {
+    display: none; }
+    @media (min-width: 760px) {
+      .main-nav__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-top: 50px;
+        padding: 0; } }
   .main-nav__item {
-    margin-right: 15px;
-    margin-top: 62px; }
+    margin-right: 54px; }
   .main-nav__link {
     list-style: none;
     color: white;
     cursor: pointer;
     font-size: 15px;
     text-transform: uppercase; }
+
+.close:before, .close:after {
+  position: absolute;
+  content: ' ';
+  right: 8px;
+  top: 0;
+  height: 24px;
+  width: 3px;
+  background-color: #fff; }
+
+.close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
 
 .about {
   display: -webkit-box;
@@ -421,7 +510,8 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 1200px; }
   .about__content {
     width: 100%;
     color: white;
@@ -429,12 +519,19 @@ button:hover {
     padding: 0;
     text-align: center; }
   .about__headline {
-    font-size: 100px;
+    padding-top: 15%;
     font-style: normal;
     font-weight: bold;
-    font-size: 150px; }
+    font-size: 120px; }
+    @media (max-width: 760px) {
+      .about__headline {
+        padding-top: 50%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 97.52%; } }
   .about__signature {
-    height: 171px;
+    height: 120px;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -467,8 +564,7 @@ button:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 92px; }
+          flex-direction: column; }
   .projects__name {
     text-align: center;
     font-style: normal;
