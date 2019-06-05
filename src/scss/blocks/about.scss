@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto;
+  min-height: 1200px;
 
   &__content {
     width: 100%;
@@ -13,14 +14,22 @@
   }
 
   &__headline {
-    font-size: 100px;
+    padding-top: 15%;
     font-style: normal;
     font-weight: bold;
-    font-size: 150px;
+    font-size: 120px;
+
+    @media (max-width: 760px) {
+      padding-top: 50%;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 97.52%;
+    }
   }
 
   &__signature {
-    height: 171px;
+    height: 120px;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;

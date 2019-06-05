@@ -1,18 +1,103 @@
 .main-nav {
   display: flex;
-  margin: 0 auto;
   justify-content: center;
-  
-  &__list {
-    display: flex;
-    flex-direction: row;
+
+  &__burger {
+    display: none;
     margin: 0;
     padding: 0;
+
+    @media (max-width: 760px) {
+      display: flex;
+      position: absolute;
+      width: 20px;
+      top: 30px;
+      right: 46px;
+      flex-wrap: wrap;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    span.line {
+      display: inline-block;
+      margin-bottom: 4px;
+      background-color: #fff;
+      width: 100%;
+      height: 3px;
+    }
+  }
+
+  &__burger:hover {
+    background-color: transparent;
+  }
+
+  &__burger-menu {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    padding: 10px;
+    background-color: #fff;
+    line-height: 1.5;
+    opacity: 0.9;
+    z-index: 2;
+
+    @media (min-width: 760px) {
+      display: none;
+    }
+  }
+
+  &__burger-list {
+    display: none;
+
+    @media (max-width: 760px) {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &__burger-item {
+    margin: 0;
+    padding-bottom: 20px;
+    padding-right: 22px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  &__burger-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+  }
+
+  &__burger-link:hover {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #494949;
+    font-weight: 700;
+  }
+  
+  &__list {
+    display: none;
+
+    @media (min-width: 760px) {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      padding: 0;
+    }
   }
   
   &__item {
-    margin-right: 15px;
-    margin-top: 62px;
+    margin-right: 54px;
 
     &--active {
     }
@@ -24,5 +109,23 @@
     cursor: pointer;
     font-size: 15px;
     text-transform: uppercase;
-  }
+  } 
+}
+
+.close:before, .close:after {
+  position: absolute;
+  content: ' ';
+  right: 8px;
+  top: 0;
+  height: 24px;
+  width: 3px;
+  background-color: #fff;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
 }
