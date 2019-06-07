@@ -248,7 +248,7 @@ $('.music__player .progressbar').slider({
 
 
     
-	});
+});
 })(jQuery);
 
 

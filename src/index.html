@@ -486,22 +486,24 @@
         </div>
       </div>
       
-      <form method="post" class="feedback__form-letter">
-        <fieldset class="feedback__form-letter--text">
-          <textarea class="feedback__form-letter--textarea" style="height: 130px;" placeholder="Вы можете оставить свое сообщение, и мы свяжемся с вами" name="message"></textarea> 
-        </fieldset>
-        <fieldset class="feedback__form-letter--personal" style="border: none;">
-          <div class="feedback__form-letter--personalname">
-            <p>Имя</p>  
-            <input type="text" class="feedback__form-letter--personalnamefield" id="username" name="text" placeholder=" введите Имя">
+      <form method="post" class="feedback__formletter">
+        <textarea class="feedback__formletter-textarea" placeholder="Вы можете оставить свое сообщение, и мы свяжемся с вами" name="message"></textarea> 
+        <div class="feedback__formletter-checkin">
+          <div class="feedback__formletter-personal" style="border: none;">
+            <div class="feedback__formletter-personal--name">
+              <p>Имя</p>  
+              <input type="text" class="feedback__formletter-personal--namefield" id="username" name="text" placeholder=" введите Имя">
+            </div>
+            <div class="feedback__formletter-personal--tel">
+              <p>Телефон</p>
+              <input type="tel" class="feedback__formletter-personal--telfield" placeholder=" +7 (___) ___ - __ - __">
+            </div> 
           </div>
-          <div class="feedback__form-letter--personaltel">
-            <p>Телефон</p>
-            <input type="tel" class="feedback__form-letter--personaltelfield" placeholder=" +7 (___) ___ - __ - __">
-          </div>   
-          <button class="feedback__form-letter--personalbtn">отправить</button>
-          <span class="feedback__form-letter--confirm"><input type="checkbox" name="" value="" ><a class="js-modal personal" href="">&nbsp;&nbsp;Подтверждаю согласие на обработку <span>персональных данных</span></a></span>  
-        </fieldset>
+          <div class="feedback__formletter-consent">  
+            <button class="feedback__formletter-consent--btn">отправить</button>
+            <span class="feedback__formletter-consent--confirm"><input type="checkbox" name="" value="" ><a class="js-modal personal" href="">&nbsp;&nbsp;Подтверждаю согласие на обработку <span>персональных данных</span></a></span>  
+          </div> 
+        </div>
       </form>
 
       <div class="modal">
@@ -529,6 +531,13 @@
       <iframe class="ymaps-layers-pane" src="https://yandex.ru/map-widget/v1/?um=constructor%3A32da50290c3ee694d943d6dca8a122c6dbbd1387faf044bc8754ac0847825116&amp;source=constructor" width="100%" height="680" frameborder="0"></iframe>     
     </div>
   </section>
+  <footer class="footer">
+    <div class="footer__foto"></div>
+    <div class="footer__text">
+      <p class="footer__text-right">© Роман Селиверстов 2019 </p>
+      <a href="#" class="footer__text-condition--link"><p class="footer__text-condition--text">Условия обработки персональных данных </p></a> 
+    </div>
+  </footer>
 
   <script src="js/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
