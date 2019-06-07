@@ -19,12 +19,30 @@
 
   &__form-headline {
     width: 40%;
+    margin-right: 123px;
+    padding: 0;
 
     &--sign {
+      margin: 0;
+      padding: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 49px;
+      color: #FF4343;
     }
+
     &--name {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
     }
+
     &--contacts {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 200.78%;
     }
   }
 
