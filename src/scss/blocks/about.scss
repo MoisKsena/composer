@@ -16,29 +16,45 @@
     text-align: center;
   }
 
-  &__headline {
-    padding: 0;
-    margin: 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 120px;
+  // &__headline {
+  //   display: flex;
+  //   align-items: baseline;
+  //   padding: 0;
+  //   margin: 0;
 
-    @media (max-width: 760px) {
-      padding-top: 50%;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 48px;
-      line-height: 97.52%;
-    }
-  }
+  //   @media (max-width: 768px) {
+  //     position: relative;
+  //   }
 
-  &__signature {
-    height: 120px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-  }
+  //   &--name {
+  //     padding-right: 15px;
+  //     font-style: normal;
+  //     font-weight: 200;
+  //     font-size: 110px;
+  //     line-height: 97.52%;
+  //     text-transform: uppercase;
+  //     z-index: 1;
+
+  //     @media (max-width: 768px) {
+  //       font-style: normal;
+  //       font-weight: 200;
+  //       font-size: 50px;
+  //       line-height: 97.52%;
+  //     }
+  //   }
+
+  //   &--cube {
+  //     width: 73px;
+  //     height: 86px;
+  //     background-color: $red;
+
+  //     @media (max-width: 768px) {
+  //       position: absolute;
+  //       right: 0;
+  //       top: 40px;
+  //     }
+  //   }
+  // }
 
   &__content-text {
     display: none;
