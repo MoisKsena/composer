@@ -424,7 +424,7 @@ body {
   background-color: black;
   background-image: url(../img/Presentation.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 65%;
   background-position: top 40px left 0px; }
 
 h3, h4 {
@@ -445,6 +445,8 @@ button:hover {
   background-color: grey; }
 
 .header {
+  height: 50px;
+  padding-bottom: 120px;
   margin: 0 auto; }
 
 .main-nav {
@@ -578,15 +580,26 @@ button:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0 auto;
-  min-height: 1200px; }
+  padding: 0; }
   .about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
     margin: 0;
     padding: 0;
     text-align: center; }
   .about__headline {
-    padding-top: 15%;
+    padding: 0;
+    margin: 0;
     font-style: normal;
     font-weight: bold;
     font-size: 120px; }
@@ -605,16 +618,44 @@ button:hover {
     font-size: 22px; }
   .about__content-text {
     display: none;
+    width: 80%;
+    margin: 0 auto;
     font-style: normal;
-    font-weight: 300;
-    font-size: 24px; }
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 114.62%; }
     .about__content-text--link {
-      -webkit-text-decoration-line: underline;
-              text-decoration-line: underline;
-      color: white; }
+      color: #FF4343; }
   .about__content-inner {
-    width: 90%;
-    margin: 0 auto; }
+    text-align: left; }
+    .about__content-inner--name {
+      margin: 0;
+      padding-left: 492px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 114.62%; }
+    .about__content-inner--text {
+      position: relative;
+      margin-top: 65px;
+      padding-left: 288px; }
+    .about__content-inner--redcube {
+      height: 200px;
+      width: 100px;
+      border: 4px solid #FF4343;
+      background-color: #000; }
+    .about__content-inner--disc {
+      position: absolute;
+      top: -10px;
+      left: 300px;
+      padding-left: 20px;
+      margin: 0;
+      z-index: 1;
+      background-color: #000;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 114.62%; }
 
 .swiper-container {
   width: 100%;
@@ -631,9 +672,13 @@ button:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-top: 165px;
+  padding: 0; }
   .projects__name {
-    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-left: 276px;
     font-style: normal;
     font-weight: 500;
     font-size: 42px;
@@ -646,6 +691,7 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 90%;
     padding: 0;
     margin: 0 auto;
     -webkit-box-orient: vertical;
@@ -713,12 +759,21 @@ button:hover {
     width: 70%;
     margin: 0;
     padding-top: 113px;
-    padding-bottom: 92px;
     padding-left: 276px;
     padding-right: 164px;
     font-weight: normal;
     font-size: 18px;
     line-height: 180%; }
+    .projects__demo-story--logo {
+      margin-top: 74px;
+      padding-left: 276px;
+      padding-bottom: 92px; }
+      .projects__demo-story--logo--img img:hover {
+        margin: 0;
+        padding: 0;
+        border: 2px solid #FF4343;
+        border-radius: 6px;
+        cursor: pointer; }
 
 .swiper-btnnext {
   position: absolute;
@@ -776,9 +831,9 @@ button:hover {
     width: 100%;
     margin: 0;
     padding-bottom: 64px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 42px; }
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 49px; }
   .music__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -857,9 +912,9 @@ button:hover {
   margin-top: 50px;
   margin-bottom: 50px; }
   .partners__name {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 42px;
-    line-height: 51px; }
+    line-height: 49px; }
 
 .feedback {
   position: relative;
@@ -900,8 +955,7 @@ button:hover {
       font-style: normal;
       font-weight: 500;
       font-size: 42px;
-      line-height: 49px;
-      color: #FF4343; }
+      line-height: 49px; }
     .feedback__form-headline--name {
       font-style: normal;
       font-weight: 400;
@@ -1076,10 +1130,11 @@ button:hover {
     margin: auto;
     height: 200px; }
   .contacts__headline {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 42px;
-    line-height: 51px; }
+    line-height: 49px; }
   .contacts__address {
+    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 180%; }
