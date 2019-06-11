@@ -100,11 +100,9 @@
             <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#" data-imageid='3'></div>
             <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#" data-imageid='4'></div>
           </div>
-          
-          <div class="swiper-pagination"></div>
-          
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+  
+          <div class="swiper-btnnext"></div>
+          <div class="swiper-btnprev"></div>
         </div>
 
     </div>
@@ -141,7 +139,7 @@
               <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
             </div>
             
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
@@ -192,7 +190,7 @@
               <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
             </div>
             
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
@@ -220,7 +218,7 @@
               <p class="projects__demo-sign--logo">BUBBLE STUDIOS</p>
           </div>
           <div class="projects__demo-logo">
-            <img class="projects__demo-logo--img" src="img/Bubble_Studios_logo.png" alt="#">
+            <img class="projects__demo-logo--img" src="img/Bubble_Studios_logo.png" alt="Bubble_Studios_logo">
           </div>
         </div>
         <div class="projects__demo-video">
@@ -243,7 +241,7 @@
               <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
             </div>
             
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
@@ -294,7 +292,7 @@
               <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
             </div>
             
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
@@ -466,11 +464,15 @@
         </div>
 
       </div>
+      <div class="music__logo">
+        <a href="https://music.apple.com/ru/album/major-grom-original-motion-picture-soundtrack/1218144012" class="music__logo--img"><img src="img/AppleMusicLogo.png" alt="AppleMusicLogo"></a>
+        
+      </div>
     </div>
   </section>
 
   <section class="partners" id="partners">
-    <h3 class="partners__name">партнеры</h3>
+    <h3 class="partners__name">Партнеры</h3>
     <div class="partners__logo"></div>
   </section>
 
@@ -479,29 +481,31 @@
       <div class="feedback__form-headline">
         <p  class="feedback__form-headline--sign">Связаться с представителем </p>
         <p  class="feedback__form-headline--name">Светлана Стахнёва</p>
-        <p  class="feedback__form-headline--contacts">+7 (965) 041-23-23</p>
         <p  class="feedback__form-headline--contacts">stakhnevasvetlana@gmail.com</p>
         <div class="feedback__form-icons">
 
         </div>
       </div>
       
-      <form method="post" class="feedback__form-letter">
-        <fieldset class="feedback__form-letter--text">
-          <textarea class="feedback__form-letter--textarea" style="height: 130px;" placeholder="Вы можете оставить свое сообщение, и мы свяжемся с вами" name="message"></textarea> 
-        </fieldset>
-        <fieldset class="feedback__form-letter--personal" style="border: none;">
-          <div class="feedback__form-letter--personalname">
-            <p>Имя</p>  
-            <input type="text" class="feedback__form-letter--personalnamefield" id="username" name="text" placeholder=" введите Имя">
+      <form method="POST" class="feedback__formletter">
+        <p>Вы можете оставить свое сообщение, и мы свяжемся с вами</p>
+        <textarea class="feedback__formletter-textarea" placeholder="Вы можете оставить свое сообщение, и мы свяжемся с вами" name="message"></textarea> 
+        <div class="feedback__formletter-checkin">
+          <div class="feedback__formletter-personal" style="border: none;">
+            <div class="feedback__formletter-personal--name">
+              <label for="name">Имя</label>  
+              <input type="text" class="feedback__formletter-personal--namefield" id="name" name="name" placeholder=" введите Имя" required>
+            </div>
+            <div class="feedback__formletter-personal--tel">
+              <label for="tel">Телефон</label>
+              <input type="tel" class="feedback__formletter-personal--telfield" id="tel" name="tel" placeholder=" +7 (___) ___ - __ - __" required>
+            </div> 
           </div>
-          <div class="feedback__form-letter--personaltel">
-            <p>Телефон</p>
-            <input type="tel" class="feedback__form-letter--personaltelfield" placeholder=" +7 (___) ___ - __ - __">
-          </div>   
-          <button class="feedback__form-letter--personalbtn">отправить</button>
-          <span class="feedback__form-letter--confirm"><input type="checkbox" name="" value="" ><a class="js-modal personal" href="">&nbsp;&nbsp;Подтверждаю согласие на обработку <span>персональных данных</span></a></span>  
-        </fieldset>
+          <div class="feedback__formletter-consent">  
+            <button class="feedback__formletter-consent--btn">отправить</button>
+            <span class="feedback__formletter-consent--confirm"><input type="checkbox" name="" value="" ><a class="js-modal personal" href="">&nbsp;&nbsp;Подтверждаю согласие на обработку <span>персональных данных</span></a></span>  
+          </div> 
+        </div>
       </form>
 
       <div class="modal">
@@ -521,7 +525,7 @@
 
   <section class="contacts" id="contacts">
     <div class="contacts__content">
-      <p class="contacts__headline">Адрес студии звукозаписи</p>
+      <h3 class="contacts__headline">Адрес студии звукозаписи</h3>
       <p class="contacts__address">г. Санкт-Петербург, набережная Крюкова канала, 12</p>
       <p class="contacts__address">Здание «Лендок»</p>
     </div>
@@ -529,6 +533,13 @@
       <iframe class="ymaps-layers-pane" src="https://yandex.ru/map-widget/v1/?um=constructor%3A32da50290c3ee694d943d6dca8a122c6dbbd1387faf044bc8754ac0847825116&amp;source=constructor" width="100%" height="680" frameborder="0"></iframe>     
     </div>
   </section>
+  <footer class="footer">
+    <div class="footer__foto"></div>
+    <div class="footer__text">
+      <p class="footer__text-right">© Роман Селиверстов 2019 </p>
+      <a href="#" class="footer__text-condition--link"><p class="footer__text-condition--text">Условия обработки персональных данных </p></a> 
+    </div>
+  </footer>
 
   <script src="js/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
