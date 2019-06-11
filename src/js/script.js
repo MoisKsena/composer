@@ -126,8 +126,8 @@ function closePopup() {
   popupLayer.style.display = "none";
 };
 
-var page = document.querySelector(".js-modal");
-page.addEventListener('click', event => {
+var page = $(".js-modal");
+page.on('click', event => {
   event.preventDefault();
 
   showPopup();
