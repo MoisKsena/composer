@@ -27,13 +27,9 @@ var swiper1 = new Swiper('.j-swiper-preview', {
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-btnnext',
+    prevEl: '.swiper-btnprev',
   },
   autoplay: {
     delay: 10000,
@@ -49,17 +45,11 @@ var swiper1 = new Swiper('.j-swiper-preview', {
 
 
 var swiper2 = new Swiper('.j-swiper-description', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: true,
+  slidesPerView: 5,
+  spaceBetween: 50,
   loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
   },
 });
 

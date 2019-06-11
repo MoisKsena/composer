@@ -2,7 +2,8 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-top: 136px;
+  margin: 0;
+  padding: 0;
   color: white;
   background-image: url(../img/music.png);
   background-repeat: no-repeat;
@@ -12,13 +13,14 @@
   &__inner {
     padding-left: 276px;
     padding-right: 164px;
-    margin-bottom: 222px;
+    margin-top: 168px;
+    margin-bottom: 205px;
   }
 
   &__name {
     display: flex;
     width: 100%;
-    padding-top: 136px;
+    margin: 0;
     padding-bottom: 64px;
     font-style: normal;
     font-weight: 300;
@@ -73,6 +75,19 @@
 
     &--duration {
       margin-left: 10px;
+    }
+  }
+
+  &__logo {
+    margin-top: 74px;
+    padding: 0;
+
+    &--img img:hover {
+      margin: 0;
+      padding: 0;
+      border: 2px solid $red;
+      border-radius: 6px;
+      cursor: pointer;
     }
   }
 }

@@ -5,10 +5,9 @@
   &__name {
     text-align: center;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 42px;
-    line-height: 51px;
-    color: white;
+    line-height: 49px;
   }
 
   &__preview {
@@ -19,8 +18,7 @@
 
   &__demo {
     display: flex;
-    padding-left: 276px;
-    padding-right: 164px;
+    padding: 0;
     margin: 0 auto;
     flex-direction: column;
     background-color: white;
@@ -31,6 +29,8 @@
     margin: 0;
     padding-top: 106px;
     padding-bottom: 77px;
+    padding-left: 276px;
+    padding-right: 164px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -39,15 +39,19 @@
   &__demo-sign {
    
     &--subtitle {
+      margin: 0;
+      padding-left: 276px;
+      padding-right: 164px;
     }
 
     &--name {
     margin: 0;
     padding: 0;
+    font-style: normal;
     font-weight: bold;
     font-size: 50px;
     line-height: 59px;
-    color: #000;
+    text-transform: uppercase;
     }
 
     &--logo {
@@ -61,6 +65,9 @@
 
   &__demo-video {
     display: flex;
+    padding-left: 276px;
+    padding-right: 164px;
+    margin: 0;
     justify-content: center;
   }
 
@@ -68,6 +75,8 @@
     margin: 0;
     padding-top: 30px;
     padding-bottom: 131px;
+    padding-left: 276px;
+    padding-right: 164px;
     color: #000;
     font-weight: 600;
     font-size: 18px;
@@ -85,6 +94,8 @@
     margin: 0;
     padding-top: 113px;
     padding-bottom: 92px;
+    padding-left: 276px;
+    padding-right: 164px;
     font-weight: normal;
     font-size: 18px;
     line-height: 180%;
@@ -97,4 +108,41 @@
     &--foto {
     }
   }
+}
+
+
+.swiper-btnnext {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  top: 40%;
+  background-image: url(../img/next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.swiper-btnprev {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 0;
+  top: 40%;
+  background-image: url(../img/prev.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.swiper-btnnext:hover, 
+.swiper-btnprev:hover {
+ 
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FF4343;
 }
