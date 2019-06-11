@@ -20,7 +20,7 @@ body {
   background-color: black;
   background-image: url(../img/Presentation.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 65%;
   background-position: top 40px left 0px;
 }
 
@@ -31,6 +31,7 @@ h3, h4 {
 a {
   text-decoration: none;
   list-style-type: none;
+  //color: white;
 }
 
 a:visited {

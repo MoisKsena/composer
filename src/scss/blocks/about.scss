@@ -3,10 +3,13 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto;
-  min-height: 1200px;
+  padding: 0;
 
   &__content {
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
     color: white;
     margin: 0;
     padding: 0;
@@ -14,7 +17,8 @@
   }
 
   &__headline {
-    padding-top: 15%;
+    padding: 0;
+    margin: 0;
     font-style: normal;
     font-weight: bold;
     font-size: 120px;
@@ -38,21 +42,58 @@
 
   &__content-text {
     display: none;
-    //margin-top: 132px;
+    width: 80%;
+    margin: 0 auto;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 24px;
+    line-height: 114.62%;
  
     &--link {
-      text-decoration-line: underline;
-      color: white;
+      color: #FF4343;
     }
   }
 
   &__content-inner {
-    width: 90%;
-    margin: 0 auto;
+    text-align: left; 
+    
+    &--name {
+      margin: 0;
+      padding-left: 492px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 114.62%;
+    }
+
+    &--text {
+      position: relative;
+      margin-top: 65px;
+      padding-left: 288px;
+    }
+
+    &--redcube {
+      height: 200px;
+      width: 100px;
+      border: 4px solid #FF4343;
+      background-color: #000;
+    }
+
+    &--disc {
+      position: absolute;
+      top: -10px;
+      left: 300px;
+      padding-left: 20px;
+      margin: 0;
+      z-index: 1;
+      background-color: #000;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 114.62%;
+    }
   }
+
 }
 
 .swiper-container {
