@@ -485,18 +485,18 @@
         </div>
       </div>
       
-      <form method="post" class="feedback__formletter">
+      <form method="POST" class="feedback__formletter">
         <p>Вы можете оставить свое сообщение, и мы свяжемся с вами</p>
         <textarea class="feedback__formletter-textarea" placeholder="Вы можете оставить свое сообщение, и мы свяжемся с вами" name="message"></textarea> 
         <div class="feedback__formletter-checkin">
           <div class="feedback__formletter-personal" style="border: none;">
             <div class="feedback__formletter-personal--name">
-              <p>Имя</p>  
-              <input type="text" class="feedback__formletter-personal--namefield" id="username" name="text" placeholder=" введите Имя">
+              <label for="name">Имя</label>  
+              <input type="text" class="feedback__formletter-personal--namefield" id="name" name="name" placeholder=" введите Имя" required>
             </div>
             <div class="feedback__formletter-personal--tel">
-              <p>Телефон</p>
-              <input type="tel" class="feedback__formletter-personal--telfield" placeholder=" +7 (___) ___ - __ - __">
+              <label for="tel">Телефон</label>
+              <input type="tel" class="feedback__formletter-personal--telfield" id="tel" name="tel" placeholder=" +7 (___) ___ - __ - __" required>
             </div> 
           </div>
           <div class="feedback__formletter-consent">  
