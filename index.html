@@ -31,9 +31,6 @@
             <a href="#about" class="main-nav__burger-link">портфолио</a>
           </li>
           <li class="main-nav__burger-item">
-            <a href="#projects" class="main-nav__burger-link">студии</a>
-          </li>
-          <li class="main-nav__burger-item">
             <a href="#music" class="main-nav__burger-link">музыка</a>
           </li>
           <li class="main-nav__burger-item">
@@ -49,9 +46,6 @@
           <a class="main-nav__link" href="#about">портфолио</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#projects">студии</a>
-        </li>
-        <li class="main-nav__item">
           <a class="main-nav__link" href="#music">музыка</a>
         </li>
         <li class="main-nav__item">
@@ -62,14 +56,22 @@
         </li>
       </ul>
     </nav>
-    <div class="icons"></div>  
+    <div class="header__icons"></div>  
+    <div class="header__headline">
+      <h1 class="header__headline--name">Roman Seliverstov</h1>
+      <div class="header__headline--cube"></div>
+    </div>
+    <!-- <div class="header__bcg"> -->
+      <img class="header__bcg--img" src="img/Presentation.png" alt="Presentation">
+    <!-- </div> -->
   </header>
 
   <section class="about" id="about">
     <div class="about__content">
-
-      <h1 class="about__headline">Roman Seliverstov</h1>
-      <p class="about__signature">COMPOSER | SONGWRITER | RECORD PRODUCER</p>
+      <!-- <div class="about__headline">
+        <h1 class="about__headline--name">Roman Seliverstov</h1>
+        <div class="about__headline--cube"></div>
+      </div> -->
 
       <div class="about__content-text" id="about__content-text">
         <div class="about__content-inner">
@@ -77,12 +79,13 @@
           <p class="about__content-inner--name">и рекорд-продюсер</p>
           
           <div class="about__content-inner--text">
-            <div class="about__content-inner--redcube"></div>
-            <div class="about__content-inner--disc">
-                <p>Глава музыкального отдела кинокомпании BUBBLE STUDIOS.</p>
-                <p>Со-основатель студии вирусного видео “Gaffy  Gaf Company”.</p>
-                <p>Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
-                <p class="about__content-text--link">Страница Романа Селиверстова на сайте <a href="#" class="about__content-text--link"><u>kinopoisk.ru</u></a></p> <a href=""></a>
+            <div class="about__content-inner--redcube">
+              <div class="about__content-inner--disc">
+                  <p>Глава музыкального отдела кинокомпании BUBBLE STUDIOS.</p>
+                  <p>Со-основатель студии вирусного видео “Gaffy  Gaf Company”.</p>
+                  <p>Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
+                  <p class="about__content-text--link">Страница Романа Селиверстова на сайте <a href="#" class="about__content-text--link"><u>kinopoisk.ru</u></a></p> <a href=""></a>
+              </div>
             </div>
           </div> 
         </div>     
@@ -98,10 +101,10 @@
         <div class="swiper-container j-swiper-preview">
           <div class="swiper-wrapper">
             <!-- слайды/фото для предпроссмотра -->
-            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#" data-imageid='1'></div>
-            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#" data-imageid='2'></div>
-            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#" data-imageid='3'></div>
-            <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#" data-imageid='4'></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/prj1.png" alt="#" data-imageid='1'></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/prj2.png" alt="#" data-imageid='2'></div>
+            <div class="swiper-slide"><img class="projects__demo-foto" src="img/prj3.png" alt="#" data-imageid='3'></div>
+            <!-- <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#" data-imageid='4'></div> -->
           </div>
   
           <div class="swiper-btnnext"></div>
@@ -124,10 +127,10 @@
         </div>
         <div class="projects__demo-video">
           <!-- здесь ссылка на youtube -->
-            <iframe width="100%" height="468" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="projects__demo-video--property" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <p class="projects__demo-signature">Майор Гром — трейлер</p>
-        <p class="projects__demo-sign--subtitle">Кадры из фильма</p>
+        <p class="projects__demo-signature--subtitleimg">Кадры из фильма</p>
 
         <div class="projects__demo-gallery">
 
@@ -155,7 +158,7 @@
             (в&nbsp;который наравне с хитами вроде Ya Mama от Fatboy входят специально написанные для фильма композиции в стиле рок) усиливает 
             положительное впечатление. Оркестровые элементы звуковой дорожки были записаны в знаменитой студии Abbey Road, в то время как 
             роковая часть сводилась в Нэшвилле в США, так что даже самый заядлый меломан не сможет придраться к качеству звука.</p>
-          <p><b>Вокруг ТВ</b></p>
+          <p style="font-weight: 500;"><b>Вокруг ТВ</b></p>
         </div>
     
         <div class="projects__demo-story--logo">
@@ -165,158 +168,6 @@
       </div>
       <!-- конец макета проекта -->
 
-      <!-- начало макета проекта -->
-      <div class="projects__demo img-description" style="display: none;" data-image-id='2'>
-        <div class="projects__demo-header">
-          <div class="projects__demo-sign">
-              <p class="projects__demo-sign--subtitle">EXAMPLE 2</p>
-              <h4 class="projects__demo-sign--name">МАЙОР ГРОМ (2017)</h4>
-              <p class="projects__demo-sign--logo">BUBBLE STUDIOS</p>
-          </div>
-          <div class="projects__demo-logo">
-            <img class="projects__demo-logo--img" src="img/Bubble_Studios_logo.png" alt="#">
-          </div>
-        </div>
-        <div class="projects__demo-video">
-          <!-- здесь ссылка на youtube -->
-            <iframe width="100%" height="468" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <p class="projects__demo-signature">Майор Гром — трейлер</p>
-        <p class="projects__demo-sign--subtitle">Кадры из фильма</p>
-
-        <div class="projects__demo-gallery">
-
-          <div class="swiper-container j-swiper-description">
-            <div class="swiper-wrapper">
-              <!-- слайды/фото для галереи -->
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img3.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
-            </div>
-            
-            <!-- <div class="swiper-pagination"></div> -->
-            
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-          </div>
-
-        </div>
-
-        <div class="projects__demo-story">
-          <p >Экшен-сцены приятно радуют глаз яркой картинкой и неподдельным драйвом, а динамичный саундтрек 
-            (в&nbsp;который наравне с хитами вроде Ya Mama от Fatboy входят специально написанные для фильма композиции в стиле рок) усиливает 
-            положительное впечатление. Оркестровые элементы звуковой дорожки были записаны в знаменитой студии Abbey Road, в то время как 
-            роковая часть сводилась в Нэшвилле в США, так что даже самый заядлый меломан не сможет придраться к качеству звука.</p>
-          <p><b>Вокруг ТВ</b></p>
-        </div>
-    
-      </div>
-      <!-- конец макета проекта -->
-
-      <!-- начало макета проекта -->
-      <div class="projects__demo img-description" style="display: none;" data-image-id='3'>
-        <div class="projects__demo-header">
-          <div class="projects__demo-sign">
-              <p class="projects__demo-sign--subtitle">EXAMPLE 3</p>
-              <h4 class="projects__demo-sign--name">МАЙОР ГРОМ (2017)</h4>
-              <p class="projects__demo-sign--logo">BUBBLE STUDIOS</p>
-          </div>
-          <div class="projects__demo-logo">
-            <img class="projects__demo-logo--img" src="img/Bubble_Studios_logo.png" alt="Bubble_Studios_logo">
-          </div>
-        </div>
-        <div class="projects__demo-video">
-          <!-- здесь ссылка на youtube -->
-            <iframe width="100%" height="468" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <p class="projects__demo-signature">Майор Гром — трейлер</p>
-        <p class="projects__demo-sign--subtitle">Кадры из фильма</p>
-
-        <div class="projects__demo-gallery">
-
-          <div class="swiper-container j-swiper-description">
-            <div class="swiper-wrapper">
-              <!-- слайды/фото для галереи -->
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img3.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
-            </div>
-            
-            <!-- <div class="swiper-pagination"></div> -->
-            
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-          </div>
-
-        </div>
-
-        <div class="projects__demo-story">
-          <p >Экшен-сцены приятно радуют глаз яркой картинкой и неподдельным драйвом, а динамичный саундтрек 
-            (в&nbsp;который наравне с хитами вроде Ya Mama от Fatboy входят специально написанные для фильма композиции в стиле рок) усиливает 
-            положительное впечатление. Оркестровые элементы звуковой дорожки были записаны в знаменитой студии Abbey Road, в то время как 
-            роковая часть сводилась в Нэшвилле в США, так что даже самый заядлый меломан не сможет придраться к качеству звука.</p>
-          <p><b>Вокруг ТВ</b></p>
-        </div>
-    
-      </div>
-      <!-- конец макета проекта -->
-
-      <!-- начало макета проекта -->
-      <div class="projects__demo img-description" style="display: none;" data-image-id='4'>
-        <div class="projects__demo-header">
-          <div class="projects__demo-sign">
-              <p class="projects__demo-sign--subtitle">EXAMPLE 4</p>
-              <h4 class="projects__demo-sign--name">МАЙОР ГРОМ (2017)</h4>
-              <p class="projects__demo-sign--logo">BUBBLE STUDIOS</p>
-          </div>
-          <div class="projects__demo-logo">
-            <img class="projects__demo-logo--img" src="img/Bubble_Studios_logo.png" alt="#">
-          </div>
-        </div>
-        <div class="projects__demo-video">
-          <!-- здесь ссылка на youtube -->
-            <iframe width="100%" height="468" src="https://www.youtube.com/embed/N5kvQa7EJ68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <p class="projects__demo-signature">Майор Гром — трейлер</p>
-        <p class="projects__demo-sign--subtitle">Кадры из фильма</p>
-
-        <div class="projects__demo-gallery">
-
-          <div class="swiper-container j-swiper-description">
-            <div class="swiper-wrapper">
-              <!-- слайды/фото для галереи -->
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img2.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img3.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img4.jpg" alt="#"></div>
-              <div class="swiper-slide"><img class="projects__demo-foto" src="img/img5.jpg" alt="#"></div>
-            </div>
-            
-            <!-- <div class="swiper-pagination"></div> -->
-            
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-          </div>
-
-        </div>
-
-        <div class="projects__demo-story">
-          <p >Экшен-сцены приятно радуют глаз яркой картинкой и неподдельным драйвом, а динамичный саундтрек 
-            (в&nbsp;который наравне с хитами вроде Ya Mama от Fatboy входят специально написанные для фильма композиции в стиле рок) усиливает 
-            положительное впечатление. Оркестровые элементы звуковой дорожки были записаны в знаменитой студии Abbey Road, в то время как 
-            роковая часть сводилась в Нэшвилле в США, так что даже самый заядлый меломан не сможет придраться к качеству звука.</p>
-          <p><b>Вокруг ТВ</b></p>
-        </div>
-    
-      </div>
-      <!-- конец макета проекта -->
      
     </div>
   </section>
@@ -330,7 +181,7 @@
           <button class="music__player--button"></button>
           <div class="music__player"> 
             <div class="music__player--controls">  
-              <span class="music__player--title">1&nbsp;&nbsp;Roman Seliverstov - Face of an Angel</span>
+              <span class="music__player--title">1.&nbsp;&nbsp;Face of an Angel</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-FaceofanAngel.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -342,7 +193,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">   
             <div class="music__player--controls">
-              <span class="music__player--title">2&nbsp;&nbsp;Roman Seliverstov - Without Knocking</span>
+              <span class="music__player--title">2.&nbsp;&nbsp;Without Knocking</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-WithoutKnocking.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -354,7 +205,7 @@
           <button class="music__player--button"></button>
           <div class="music__player"> 
             <div class="music__player--controls">
-              <span class="music__player--title">3&nbsp;&nbsp;Roman Seliverstov - A Broken Cash Machine</span>
+              <span class="music__player--title">3.&nbsp;&nbsp;A&nbsp;Broken&nbsp;Cash Machine</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-ABrokenCashMachine.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -366,7 +217,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">4&nbsp;&nbsp;Roman Seliverstov - Rest in Peace</span>
+              <span class="music__player--title">4.&nbsp;&nbsp;Rest in Peace</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-RestinPeace.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -378,7 +229,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">    
             <div class="music__player--controls">
-              <span class="music__player--title">5&nbsp;&nbsp;Roman Seliverstov - The Housebreaker</span>
+              <span class="music__player--title">5.&nbsp;&nbsp;The Housebreaker</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-TheHousebreaker.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -390,7 +241,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">6&nbsp;&nbsp;Roman Seliverstov - Good Idea</span>
+              <span class="music__player--title">6.&nbsp;&nbsp;Good Idea</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-GoodIdea.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -402,7 +253,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">7&nbsp;&nbsp;Roman Seliverstov - Gang Leader Freaks Out</span>
+              <span class="music__player--title">7.&nbsp;&nbsp;Gang Leader Freaks Out</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-GangLeaderFreaksOut.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -414,7 +265,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">8&nbsp;&nbsp;Roman Seliverstov - Ice Cold Driver</span>
+              <span class="music__player--title">8.&nbsp;&nbsp;Ice Cold Driver</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-IceColdDriver.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -426,7 +277,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">9&nbsp;&nbsp;Roman Seliverstov - Police Arrives</span>
+              <span class="music__player--title">9.&nbsp;&nbsp;Police Arrives</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-PoliceArrives.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -438,7 +289,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">10&nbsp;&nbsp;Roman Seliverstov - Big Standoff</span>
+              <span class="music__player--title">10.&nbsp;&nbsp;Big Standoff</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-BigStandoff.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -450,7 +301,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">11&nbsp;&nbsp;Roman Seliverstov - I M Gonna Get You</span>
+              <span class="music__player--title">11.&nbsp;&nbsp;I M Gonna Get You</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-IMGonnaGetYou.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -462,7 +313,7 @@
           <button class="music__player--button"></button>
           <div class="music__player">
             <div class="music__player--controls">
-              <span class="music__player--title">12&nbsp;&nbsp;Roman Seliverstov - Out of Balance</span>
+              <span class="music__player--title">12.&nbsp;&nbsp;Out of Balance</span>
               <!-- <div class="progressbar"></div> -->
               <audio src="mp3/RomanSeliverstov-OutofBalance.mp3" preload="metadata"></audio>
               <span class="music__player--duration">0:0</span>
@@ -485,7 +336,7 @@
   <section class="feedback">
     <div class="feedback__form">
       <div class="feedback__form-headline">
-        <h3  class="feedback__form-headline--sign">Связаться с представителем </h3>
+        <h3  class="feedback__form-headline--sign">Связаться с&nbsp;представителем </h3>
         <p  class="feedback__form-headline--name">Светлана Стахнёва</p>
         <p  class="feedback__form-headline--contacts">stakhnevasvetlana@gmail.com</p>
         <div class="feedback__form-icons">
@@ -495,7 +346,7 @@
       
       <form method="POST" class="feedback__formletter">
         <p>Вы можете оставить свое сообщение, и мы свяжемся с вами</p>
-        <textarea class="feedback__formletter-textarea" placeholder="Вы можете оставить свое сообщение, и мы свяжемся с вами" name="message"></textarea> 
+        <textarea class="feedback__formletter-textarea" name="message"></textarea> 
         <div class="feedback__formletter-checkin">
           <div class="feedback__formletter-personal" style="border: none;">
             <div class="feedback__formletter-personal--name">
