@@ -1,10 +1,12 @@
 .partners {
   display: flex;
-  width: 90%;
+  width: 67%;
   flex-direction: column;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 75%;
+  }
 
   &__name {
     font-weight: 500;

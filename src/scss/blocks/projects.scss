@@ -11,14 +11,14 @@
   &__name {
     width: 100%;
     margin: auto;
-    padding-left: 276px;
+    padding-left: 16%;
     font-style: normal;
     font-weight: 500;
     font-size: 42px;
     line-height: 49px;
 
     @media (max-width: 768px) {
-      padding-left: 0;
+      padding-left: 40px;
     }
   }
 
@@ -51,7 +51,7 @@
 
   &__demo-header {
     display: flex;
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 75px;
@@ -60,7 +60,6 @@
     justify-content: space-between;
 
     @media (max-width: 768px) {
-      width: 90%;
       margin: 0 auto;
       padding-left: 0;
       padding-right: 0;
@@ -137,7 +136,7 @@
 
   &__demo-video {
     display: flex;
-    width: 65%;  
+    width: 75%;  
     padding: 0;
     margin: 0 auto;
 
@@ -162,7 +161,7 @@
     margin: 0;
     padding-top: 32px;
     padding-bottom: 78px;
-    padding-left: 17%;
+    padding-left: 12.5%;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -170,7 +169,7 @@
     color: #4F4F4F;
 
     @media (max-width: 768px) {
-      padding-left: 14px;
+      padding-left: 40px;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -179,7 +178,7 @@
 
     &--subtitleimg {
       margin: 0;
-      padding-left: 17%;
+      padding-left: 12.5%;
       padding-bottom: 36px;
       font-style: normal;
       font-weight: 500;
@@ -189,7 +188,7 @@
       color: #4F4F4F;
 
       @media (max-width: 768px) {
-        padding-left: 14px;
+        padding-left: 40px;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -208,7 +207,7 @@
   }
 
   &__demo-story {
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
     padding-top: 64px;
     padding-bottom: 68px;
@@ -216,11 +215,12 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 180%;
+    text-align:justify;
     color: #4F4F4F;
 
     &--logo {
       margin: 0;
-      padding-left: 222px;
+      padding-left: 12.5%;
       padding-bottom: 90px;
 
       &--img img:hover {
@@ -229,6 +229,11 @@
         border: 2px solid $red;
         border-radius: 6px;
         cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        width: 65%;
+        padding-left: 40px;
       }
     }
   }
@@ -281,5 +286,5 @@
 }
 
 .swiper-container {
-  width: 90%;
+  width: 100%;
 }
