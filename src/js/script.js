@@ -31,9 +31,9 @@ var swiper1 = new Swiper('.j-swiper-preview', {
     nextEl: '.swiper-btnnext',
     prevEl: '.swiper-btnprev',
   },
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   on:{
     slideChange: function(){
       let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
