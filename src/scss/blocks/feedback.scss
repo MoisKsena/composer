@@ -2,8 +2,7 @@
   position: relative;
   display: flex;
   width: 100%;
-  margin-top: 112px;
-  margin-bottom: 189px;
+  margin-top: 222px;
   padding: 0;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -12,11 +11,12 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
+    margin-top: 92px;
   }
 
   &__form {
     display: flex;
-    width: 90%;
+    width: 80%;
     flex-direction: row;
     margin: auto;
 
@@ -27,9 +27,8 @@
   }
 
   &__form-headline {
-    width: 40%;
-    margin-right: 123px;
-    padding: 0;
+    margin: 0;
+    padding-right: 60px;
 
     &--sign {
       margin: 0;
@@ -38,19 +37,45 @@
       font-weight: 500;
       font-size: 42px;
       line-height: 49px;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
 
     &--name {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-    }
-
-    &--contacts {
+      margin: 0;
+      padding-top: 44px;
+      padding-bottom: 26px;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
-      line-height: 200.78%;
+      line-height: 193.78%;
+      letter-spacing: 0.02em;
+
+      @media (max-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        line-height: 33px;
+      }
+    }
+
+    &--contacts {
+      margin: 0;
+      padding-bottom: 38px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 193.78%;
+      letter-spacing: 0.02em;
+
+      @media (max-width: 768px) {
+        padding-bottom: 28px;
+        font-size: 18px;
+        line-height: 33px;
+      }
     }
   }
 
@@ -64,6 +89,11 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 146.28%;
+    color: #F2F2F2;
   }
 
   &__formletter-textarea {
@@ -96,10 +126,18 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     &--name {
       width: 100%;
       margin-right: 23px;
       padding: 0;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
     }
 
     &--namefield {
