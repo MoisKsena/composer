@@ -1,8 +1,10 @@
 .main-nav {
+  width: 90%;
   display: flex;
-  justify-content: center;
   margin-top: 30px;
   padding: 0;
+  justify-content: flex-end;
+  align-items: center;
 
   &__burger {
     display: none;
@@ -111,7 +113,25 @@
     cursor: pointer;
     font-size: 15px;
     text-transform: uppercase;
-  } 
+  }
+  
+  &__icons {
+    display: flex;
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 224px;
+    flex-direction: row;
+    
+    &--facebook {
+      margin: 0;
+      padding: 0;
+    }
+
+    &--instagram {
+      margin: 0;
+      padding-right: 35px;
+    }
+  }
 }
 
 .close:before, .close:after {

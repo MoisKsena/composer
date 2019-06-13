@@ -50,9 +50,12 @@ a {
   text-decoration: none;
   list-style-type: none;
 }
+a:hover {
+  color: #FF4343;
+}
 
 a:visited {
-  background-color: white;
+  background-color: #FF4343;
 }
 
 img {
