@@ -71,6 +71,30 @@
   }
 
   &__form-icons {
+    margin: 0;
+    padding: 0;
+
+    &--vk {
+      margin: 0;
+      padding-right: 15px;
+    }
+
+    &--vkhover:hover {
+      background-color: $red;
+      border: 2px solid $red;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    &--whatsapp {
+      margin: 0;
+      padding-right: 15px;
+    }
+
+    &--facebook {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__formletter {
@@ -157,6 +181,7 @@
       color: #fff;
     }
   }
+
   &__formletter-consent {
     width: 48%;
     display: flex;
