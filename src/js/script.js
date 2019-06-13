@@ -134,13 +134,20 @@ page.on('click', event => {
 
 });
 
-var closeModal = document.querySelector(".modal__content--btn");
-closeModal.addEventListener('click', event => {
+var closeModal = $('.btn-close');
+closeModal.on('click',event => {
   event.preventDefault();
 
   closePopup();
-
 });
+
+// var closeModal = document.querySelector('.btn-close');
+// closeModal.addEventListener('click', event => {
+//   event.preventDefault();
+
+//   closePopup();
+
+// });
 
 var pageModal = document.querySelector(".overlay");
 pageModal.addEventListener('click', event => {

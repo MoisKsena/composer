@@ -33,15 +33,6 @@
     &--sign {
       margin: 0;
       padding: 0;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 42px;
-      line-height: 49px;
-
-      @media (max-width: 768px) {
-        font-size: 24px;
-        line-height: 28px;
-      }
     }
 
     &--name {
@@ -184,6 +175,12 @@
       letter-spacing: 0.15em;
       color: white;
     }
+
+    &--btn:hover {
+      outline: 0;
+      background-color: grey;
+    }
+
     &--confirm {
       width: 100%;
     }
@@ -191,6 +188,17 @@
 
   &__modal {
     display: none;
+  }
+}
+
+.personal {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: white;
+  
+  & span {
+    text-decoration-line: underline; 
   }
 }
 
@@ -212,23 +220,96 @@
 
   &__content {
     display: flex;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
     position: relative;
+    flex-direction: column;
     color: black;
-    font-size: 50px;
     padding: 10px;
-    
     background-color: #fff;
 
-    &--btn {
-      position: absolute;
-      top: 10px;
-      right: 0;
-      font-size: 20px;
-      background-color: #fff;
+    &--close {
+      margin: 0;
+      padding: 0;
       border: none;
+      background-color: transparent;
+    }
+
+    &--close:before, &--close:after {
+      position: absolute;
+      content: ' ';
+      right: 50px;
+      top: 30px;
+      height: 24px;
+      width: 3px;
+      background-color: #000;
       cursor: pointer;
     }
+
+    &--close:before {
+      transform: rotate(45deg);
+    }
+    
+    &--close:after {
+      transform: rotate(-45deg);
+    }
+
+    &--btn {
+      width: 288px;
+      height: 45px;
+      position: absolute;
+      bottom: 10px;
+      left: 45%;
+      background-color: #000;
+      border: none;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 146.28%;
+      letter-spacing: 0.3em;
+      color: #E0E0E0;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        width: 60%;
+        left: 20%;
+        font-size: 12px;
+      }
+    }
   }
+
+  &__content-text {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 97px;
+    padding-bottom: 140px;
+
+    &--name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 49px;
+
+      @media (max-width: 768px) {
+        font-size: 25px;
+        line-height: 32px;
+      }
+    }
+
+    &--sign {
+      text-align:justify;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    &--paragraph {
+      text-align:justify;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+    }
 }
 
 .overlay {
@@ -242,14 +323,4 @@
   z-index: 90;
   display: none;
 }
-
-.personal {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 22px;
-  color: white;
-}
-
-.personal span {
-  text-decoration-line: underline; 
 }

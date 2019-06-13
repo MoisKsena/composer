@@ -4,15 +4,18 @@
   color: white;
 
   &__content {
-    width: 90%;
+    width: 80%;
     margin: auto;
-    height: 200px;
+    //height: 200px;
+
+    @media (max-width: 768px) {
+      width: 77%;
+    }
   }
 
   &__headline {
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 49px;
+    margin: 0;
+    padding: 0;
   }
 
   &__address {
@@ -23,7 +26,7 @@
   }
 
   &__map {
-    width: 90%;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
   }
