@@ -442,8 +442,11 @@ a {
   text-decoration: none;
   list-style-type: none; }
 
+a:hover {
+  color: #FF4343; }
+
 a:visited {
-  background-color: white; }
+  background-color: #FF4343; }
 
 img {
   height: auto; }
@@ -511,14 +514,18 @@ img {
       height: auto; }
 
 .main-nav {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 30px;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .main-nav__burger {
     display: none;
     margin: 0;
@@ -614,6 +621,23 @@ img {
     cursor: pointer;
     font-size: 15px;
     text-transform: uppercase; }
+  .main-nav__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 224px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .main-nav__icons--facebook {
+      margin: 0;
+      padding: 0; }
+    .main-nav__icons--instagram {
+      margin: 0;
+      padding-right: 35px; }
 
 .close:before, .close:after {
   position: absolute;
@@ -1176,6 +1200,23 @@ img {
           padding-bottom: 28px;
           font-size: 18px;
           line-height: 33px; } }
+  .feedback__form-icons {
+    margin: 0;
+    padding: 0; }
+    .feedback__form-icons--vk {
+      margin: 0;
+      padding-right: 15px; }
+    .feedback__form-icons--hover:hover {
+      background-color: #FF4343;
+      border: 2px solid #FF4343;
+      border-radius: 20px;
+      z-index: 1; }
+    .feedback__form-icons--whatsapp {
+      margin: 0;
+      padding-right: 15px; }
+    .feedback__form-icons--facebook {
+      margin: 0;
+      padding: 0; }
   .feedback__formletter {
     display: -webkit-box;
     display: -ms-flexbox;
