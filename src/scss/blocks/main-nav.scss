@@ -1,10 +1,15 @@
 .main-nav {
-  width: 90%;
   display: flex;
-  margin-top: 30px;
+  margin: 0 auto;
   padding: 0;
   justify-content: flex-end;
   align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 146.28%;
+  letter-spacing: 0.27em;
+  text-transform: uppercase;
 
   &__burger {
     display: none;
@@ -15,8 +20,8 @@
       display: flex;
       position: absolute;
       width: 20px;
-      top: 28px;
-      right: 18px;
+      top: 15px;
+      right: 15px;
       flex-wrap: wrap;
       background-color: transparent;
       border: none;
@@ -92,10 +97,10 @@
   &__list {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       display: flex;
       flex-direction: row;
-      margin: 0;
+      margin: 0 ;
       padding: 0;
     }
   }
@@ -116,11 +121,17 @@
   }
   
   &__icons {
-    display: flex;
-    margin: 0;
-    padding-right: 60px;
-    padding-left: 224px;
-    flex-direction: row;
+    display: none;
+
+    @media (min-width: 769px) {
+      
+      display: flex;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      right: 60px;
+      flex-direction: row;
+    }
     
     &--facebook {
       margin: 0;

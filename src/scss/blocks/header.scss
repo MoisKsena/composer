@@ -1,41 +1,60 @@
 .header {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   margin-bottom: 120px;
+ 
 
   @media (max-width: 768px) {
     margin-bottom: 82px;
   }
 
+  &__menu {
+    display: flex;
+    position: relative;
+    padding-top: 0;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; 
+
+    @media (min-width: 769px) {
+      padding-top: 30px;
+    }
+  }
+
   &__headline {
     display: flex;
     align-items: baseline;
-    justify-content: center;
-    padding: 0;
-    margin-top: 123px;
+    justify-content: flex-end;
+    padding-top: 0;
+    margin: 0;  
     // background-image: url(../img/Presentation.png);
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: bottom 0px left 0px;
-  
 
     @media (max-width: 768px) {
-      position: relative;
+      padding-top: 167px;
     }
 
     &--name {
+      margin: 0;
+      padding-top: 100px;
       padding-right: 15px;
       padding-left: 20px;
       font-style: normal;
       font-weight: 200;
       font-size: 110px;
       line-height: 97.52%;
+      text-align: center;
+      letter-spacing: 0.035em;
       text-transform: uppercase;
       color: #fff;
       z-index: 1;
 
       @media (max-width: 768px) {
-        
+        padding-top: 0;
         text-align: center;
         font-style: normal;
         font-weight: 200;
@@ -51,25 +70,30 @@
       @media (max-width: 768px) {
         position: absolute;
         right: 0;
-        top: 40px;
+        top: 174px;
       }
     }
   }
 
   &__bcg {
-    height: 785px;
+    // margin: 0;
+    // padding: 0;
+    // height: 680px;
     // background-image: url(../img/Presentation.png);
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: bottom 0px left 0px;
   
-    @media (max-width: 768px) {
-      height: 380px;
-    }
+   
 
     &--img {
       width: 100%;
       height: auto;
+
+      @media (max-width: 768px) {
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
   
