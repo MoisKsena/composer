@@ -2,27 +2,28 @@
   position: relative;
   display: flex;
   width: 100%;
-  margin-top: 222px;
+  margin-top: 92px ;
+  margin-bottom: 180px;
   padding: 0;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   color: white;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-top: 92px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 222px;
   }
 
   &__form {
     display: flex;
-    width: 80%;
-    flex-direction: row;
+    width: 75%;
+    flex-direction: column;
     margin: auto;
 
-    @media (max-width: 768px) {
-      width: 75%;
-      flex-direction: column;
+    @media (min-width: 768px) {
+      width: 80%;
+      flex-direction: row; 
     }
   }
 
@@ -37,35 +38,35 @@
 
     &--name {
       margin: 0;
-      padding-top: 44px;
-      padding-bottom: 26px;
+      padding-top: 32px;
+      padding-bottom: 20px;
       font-style: normal;
       font-weight: 500;
-      font-size: 24px;
-      line-height: 193.78%;
+      font-size: 20px;
+      line-height: 33px;
       letter-spacing: 0.02em;
 
-      @media (max-width: 768px) {
-        padding-top: 32px;
-        padding-bottom: 20px;
-        font-size: 20px;
-        line-height: 33px;
+      @media (min-width: 768px) {
+        padding-top: 44px;
+        padding-bottom: 26px;
+        font-size: 24px;
+        line-height: 193.78%;
       }
     }
 
     &--contacts {
       margin: 0;
-      padding-bottom: 38px;
+      padding-bottom: 28px;
       font-style: normal;
       font-weight: 300;
-      font-size: 24px;
-      line-height: 193.78%;
+      font-size: 18px;
+      line-height: 33px;
       letter-spacing: 0.02em;
 
-      @media (max-width: 768px) {
-        padding-bottom: 28px;
-        font-size: 18px;
-        line-height: 33px;
+      @media (min-width: 768px) {
+        padding-bottom: 38px;
+        font-size: 24px;
+        line-height: 193.78%;
       }
     }
   }
@@ -78,10 +79,10 @@
       margin: 0;
       padding-right: 15px;
     }
-
+ 
     &--hover:hover {
       background-color: $red;
-      border: 2px solid $red;
+      //border: 2px solid $red;
       border-radius: 20px;
       z-index: 1;
     }
@@ -114,7 +115,7 @@
   &__formletter-textarea {
     width: 100%;
     height: 130px;
-    margin-bottom: 43px; 
+    margin-bottom: 33px; 
     padding: 0;
     border: 1px solid white;
     background-color: #000;
@@ -134,24 +135,25 @@
 
   &__formletter-personal {
     width: 100%;
-    margin-bottom: 43px; 
+    margin-bottom: 38px; 
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
-      flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
     }
 
     &--name {
       width: 100%;
-      margin-right: 23px;
-      padding: 0;
+      margin-right: 0;
+      padding-bottom: 36px;
 
-      @media (max-width: 768px) {
-        margin-right: 0;
+      @media (min-width: 768px) {
+        margin-right: 23px;
+        padding-bottom: 0;
       }
     }
 
@@ -183,14 +185,18 @@
   }
 
   &__formletter-consent {
-    width: 48%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+      width: 48%;
+    }
     
     &--btn {
       width: 100%;
       height: 45px;
-      margin-bottom: 14px;
+      margin-bottom: 17px;
       padding: 0;
       background-color: #FF4343;
       border: none;
@@ -281,25 +287,25 @@
     }
 
     &--btn {
-      width: 288px;
+      width: 60%;
       height: 45px;
       position: absolute;
       bottom: 10px;
-      left: 45%;
+      left: 20%;
       background-color: #000;
       border: none;
       font-style: normal;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 12px;
       line-height: 146.28%;
       letter-spacing: 0.3em;
       color: #E0E0E0;
       cursor: pointer;
 
-      @media (max-width: 768px) {
-        width: 60%;
-        left: 20%;
-        font-size: 12px;
+      @media (min-width: 768px) {
+        width: 288px;
+        left: 45%;
+        font-size: 15px;
       }
     }
   }
@@ -313,12 +319,12 @@
     &--name {
       font-style: normal;
       font-weight: 500;
-      font-size: 42px;
-      line-height: 49px;
+      font-size: 25px;
+      line-height: 32px;
 
       @media (max-width: 768px) {
-        font-size: 25px;
-        line-height: 32px;
+        font-size: 42px;
+        line-height: 49px;
       }
     }
 

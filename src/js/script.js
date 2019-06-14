@@ -46,7 +46,7 @@ var swiper1 = new Swiper('.j-swiper-preview', {
 
 var swiper2 = new Swiper('.j-swiper-description', {
   slidesPerView: 5,
-  spaceBetween: 50,
+  spaceBetween: 30,
   loop: true,
   autoplay: {
     delay: 2500,

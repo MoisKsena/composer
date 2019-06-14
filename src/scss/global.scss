@@ -50,17 +50,23 @@ a {
   text-decoration: none;
   list-style-type: none;
 }
+
 a:hover {
   color: #FF4343;
 }
 
 a:visited {
-  background-color: #FF4343;
+  background-color: #4F4F4F;
 }
 
 img {
   height: auto;
 }
 
+svg path {
+  stroke:inherit;
+  stroke-width:inherit;
+  fill:inherit;
+}
 
 

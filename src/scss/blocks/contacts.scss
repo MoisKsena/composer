@@ -4,31 +4,46 @@
   color: white;
 
   &__content {
-    width: 80%;
+    width: 77%;
     margin: auto;
-    //height: 200px;
 
-    @media (max-width: 768px) {
-      width: 77%;
+    @media (min-width: 768px) {
+      width: 80%;
     }
   }
 
   &__headline {
     margin: 0;
-    padding: 0;
+    padding-bottom: 30px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 52px;
+    }
   }
 
   &__address {
+    margin: 0;
+    padding-bottom: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 180%;
+
+    @media (min-width: 768px) {
+      padding-bottom: 16px;
+    }
   }
 
   &__map {
-    width: 100%;
-    padding: 0;
+    width: 80%;
+    height: 340px;
+    padding-top: 54px;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      height: 680px;
+      padding-top: 47px;
+    }
   }
 }
 

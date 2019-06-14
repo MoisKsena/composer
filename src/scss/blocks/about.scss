@@ -18,16 +18,16 @@
 
   &__content-text {
     display: none;
-    width: 67%;
+    width: 75%;
     margin: 0 auto;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 114.62%;
 
-    @media (max-width: 768px) {
-      width: 75%;
-     font-size: 16px;
+    @media (min-width: 768px) {
+      width: 67%;
+      font-size: 24px;
     }
  
     &--link {
@@ -42,15 +42,15 @@
     
     &--name {
       margin: 0;
-      padding-left: 220px;
+      padding-left: 32px;
       font-style: normal;
       font-weight: 500;
-      font-size: 64px;
+      font-size: 24px;
       line-height: 114.62%;
 
-      @media (max-width: 768px) {
-        padding-left: 32px;
-        font-size: 24px;
+      @media (min-width: 768px) {
+        padding-left: 220px;
+        font-size: 64px;
       }
     }
 
@@ -95,14 +95,11 @@
       background-color: #000;
       font-style: normal;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 16px;
       line-height: 114.62%;
 
-      @media (max-width: 768px) {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 114.62%;
+      @media (min-width: 768px) {;
+        font-size: 24px;
       }
     }
   }
