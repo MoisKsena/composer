@@ -10,18 +10,19 @@
     padding: 0;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
 
     @media (min-width: 769px) {
       height: 296px;
     }
 
     &--img {
-      width: 34%;
+      width: 33%;
       object-fit: cover;
 
-      @media (min-width: 769px) {
-        width: 100%;
-      }
+      @media (min-width: 1020px) {
+        width: 33%;
+      } 
     } 
   }
 
@@ -80,7 +81,7 @@
 #footimg {
   width: 0;
 
-  @media (min-width: 769px) {
-    width: 34%;
-   }
+  @media (min-width: 1200px) {
+    width: 33%;
+  }
 }
