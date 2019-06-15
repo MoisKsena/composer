@@ -1576,9 +1576,9 @@ svg path {
       width: 33%;
       -o-object-fit: cover;
          object-fit: cover; }
-      @media (min-width: 769px) {
+      @media (min-width: 1020px) {
         .footer__foto--img {
-          width: 100%; } }
+          width: 33%; } }
   .footer__text {
     width: 100%;
     height: 117px;
@@ -1629,8 +1629,8 @@ svg path {
 
 #footimg {
   width: 0; }
-  @media (min-width: 769px) {
+  @media (min-width: 1200px) {
     #footimg {
-      width: 34%; } }
+      width: 33%; } }
 
 /*# sourceMappingURL=style.css.map */
