@@ -17,6 +17,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center; 
+    z-index: 1;
 
     @media (min-width: 769px) {
       padding-top: 30px;
