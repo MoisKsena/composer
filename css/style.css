@@ -1565,12 +1565,15 @@ svg path {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; }
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     @media (min-width: 769px) {
       .footer__foto {
         height: 296px; } }
     .footer__foto--img {
-      width: 34%;
+      width: 33%;
       -o-object-fit: cover;
          object-fit: cover; }
       @media (min-width: 769px) {
