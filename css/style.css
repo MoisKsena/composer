@@ -484,7 +484,8 @@ svg path {
         flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    z-index: 1; }
     @media (min-width: 769px) {
       .header__menu {
         padding-top: 30px; } }
