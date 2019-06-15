@@ -1,18 +1,18 @@
 .partners {
   display: flex;
-  width: 67%;
+  width: 75%;
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
 
-  @media (max-width: 768px) {
-    width: 75%;
+  @media (min-width: 768px) {
+    width: 67%;
   }
 
   &__name {
 
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
 
     }
   }
