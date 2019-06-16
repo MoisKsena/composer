@@ -48,35 +48,27 @@ function initSwipers(){
 
 
   
-  // var swiperDescription =  $('.j-swiper-description');
-  // swiperDescription.each(function(){
-  //   new Swiper($(this), {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30,
-  //     loop: true,
-  //     autoplay: {
-  //       delay: 2500,
-  //     },
-  //   });
-  // });
+  var swiperDescription =  $('.j-swiper-description');
+  swiperDescription.each(function(){
+    new Swiper($(this), {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+      },
+    });
+  });
 
-var swiperDescription = new Swiper('.j-swiper-description', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-  },
-});
+// var swiperDescription = new Swiper('.j-swiper-description', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+//   },
+// });
 
-var swiperDescription3 = new Swiper('.j-swiper-description3', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-  },
-});
 
 }
 
@@ -224,6 +216,22 @@ $('.music__player .progressbar').slider({
   }, 
   start: function( event, ui ) {
     $(this).attr('data-sliding', 'true');
+  }
+});
+
+//validation
+
+$("#feedbackForm").validate({
+  rules: {
+    message: "required",
+    name: {
+      required: true,
+      minlength: 3
+    },
+    tel:{
+      required: true,
+      minlength: 3
+    },
   }
 });
 
