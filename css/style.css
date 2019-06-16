@@ -828,9 +828,14 @@ svg path {
       .projects__name {
         padding-left: 16%; } }
   .projects__preview {
-    width: 95%;
+    width: 90%;
     margin: auto;
-    padding: 50px 0; }
+    padding-top: 20px;
+    padding-bottom: 30px; }
+    @media (min-width: 768px) {
+      .projects__preview {
+        padding-top: 40px;
+        padding-bottom: 46px; } }
   .projects__demo-foto {
     width: 100%; }
   .projects__block {
@@ -972,8 +977,8 @@ svg path {
   .projects__demo-story {
     width: 75%;
     margin: 0 auto;
-    padding-top: 64px;
-    padding-bottom: 68px;
+    padding-top: 25px;
+    padding-bottom: 35px;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -983,7 +988,9 @@ svg path {
     @media (min-width: 768px) {
       .projects__demo-story {
         font-size: 16px;
-        line-height: 180%; } }
+        line-height: 180%;
+        padding-top: 64px;
+        padding-bottom: 68px; } }
     .projects__demo-story--logo {
       width: 65%;
       padding-left: 40px;
@@ -1033,9 +1040,6 @@ svg path {
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #FF4343; }
-
-.swiper-container {
-  width: 100%; }
 
 .music {
   display: -webkit-box;
@@ -1378,7 +1382,10 @@ svg path {
       color: white; }
     .feedback__formletter-consent--btn:hover {
       outline: 0;
-      background-color: grey; }
+      background-color: #fff;
+      color: #000;
+      font-size: 15px;
+      letter-spacing: 0.15em; }
     .feedback__formletter-consent--confirm {
       width: 100%; }
   .feedback__modal {
@@ -1473,19 +1480,19 @@ svg path {
   .modal__content-text--name {
     font-style: normal;
     font-weight: 500;
-    font-size: 42px;
-    line-height: 49px; }
+    font-size: 32px;
+    line-height: 32px; }
     @media (min-width: 768px) {
       .modal__content-text--name {
-        font-size: 25px;
-        line-height: 32px; } }
+        font-size: 42px;
+        line-height: 49px; } }
   .modal__content-text--sign {
-    text-align: justify;
+    text-align: left;
     font-style: normal;
     font-weight: 500;
     font-size: 16px; }
   .modal__content-text--paragraph {
-    text-align: justify;
+    text-align: left;
     font-style: normal;
     font-weight: 500;
     font-size: 12px; }
@@ -1531,6 +1538,7 @@ svg path {
     width: 80%;
     height: 340px;
     padding-top: 54px;
+    padding-bottom: 80px;
     margin: 0 auto; }
     @media (min-width: 768px) {
       .contacts__map {
@@ -1574,7 +1582,7 @@ svg path {
       .footer__foto {
         height: 296px; } }
     .footer__foto--img {
-      width: 33%;
+      width: 33.2%;
       -o-object-fit: cover;
          object-fit: cover; }
       @media (min-width: 1020px) {
