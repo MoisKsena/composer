@@ -1,0 +1,77 @@
+.swiper-container {
+}
+
+.swiper-wrapper {
+  display: flex;
+  margin: auto;
+}
+
+.swiper-slide {
+  //display: flex;
+  margin: auto;
+}
+
+.swiper {
+  &__demo-foto {
+    width: 100%;
+  }
+}
+
+.swiper-btnnext {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    top: 30%;
+  }
+
+  &--color {
+    width: 40px;
+    height: 40px;
+    fill: $red;
+
+    @media (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--color:hover {
+    fill: white;
+  }
+}
+
+.swiper-btnprev {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    top: 30%;
+  }
+
+  &--color {
+    width: 40px;
+    height: 40px;
+    fill: $red;
+
+    @media (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--color:hover {
+    fill: white;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FF4343;
+}

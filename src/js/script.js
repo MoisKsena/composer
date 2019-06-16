@@ -33,9 +33,6 @@ function initSwipers(){
       nextEl: '.swiper-btnnext',
       prevEl: '.swiper-btnprev',
     },
-    // autoplay: {
-    //   delay: 10000,
-    // },
     on:{
       slideChange: function(){
         let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
@@ -52,8 +49,10 @@ function initSwipers(){
   swiperDescription.each(function(){
     new Swiper($(this), {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 15,
+      slidesPerGroup: 1,
       loop: true,
+      loopFillGroupWithBlank: true,
       autoplay: {
         delay: 2500,
       },
@@ -69,6 +68,24 @@ function initSwipers(){
 //   },
 // });
 
+// var swiperDescription2 = new Swiper('.j-swiper-description2', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+//   },
+// });
+
+// var swiperDescription3 = new Swiper('.j-swiper-description3', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+//   },
+// });
+
 
 }
 
@@ -76,11 +93,6 @@ function initSwipers(){
 //show textblock
 
 $("#about__content-text").fadeIn(5000);
-
-//PORTFOLIO
-
-  // $(".img-description", ".img-descriptions").hide();
-  // $(".img-description[data-imageid="+ imageId +"]", ".img-descriptions").show();
 
 
 //modal open
