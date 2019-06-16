@@ -442,9 +442,6 @@ a {
   text-decoration: none;
   list-style-type: none; }
 
-a:hover {
-  color: #FF4343; }
-
 a:visited {
   background-color: #4F4F4F; }
 
@@ -738,8 +735,11 @@ svg path {
       .about__content-text {
         width: 67%;
         font-size: 24px; } }
-    .about__content-text--link {
+    .about__content-text--link,
+    .about__content-text--link a {
       color: #FF4343; }
+    .about__content-text--link a:hover {
+      color: white; }
   .about__content-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -799,14 +799,6 @@ svg path {
         .about__content-inner--disc {
           font-size: 24px; } }
 
-.swiper-container {
-  width: 100%;
-  height: 100%; }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px; }
-
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,8 +828,6 @@ svg path {
       .projects__preview {
         padding-top: 40px;
         padding-bottom: 46px; } }
-  .projects__demo-foto {
-    width: 100%; }
   .projects__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1006,6 +996,18 @@ svg path {
         .projects__demo-story--logo {
           width: 100%;
           padding-left: 12.5%; } }
+
+.swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
+
+.swiper-slide {
+  margin: auto; }
+
+.swiper__demo-foto {
+  width: 100%; }
 
 .swiper-btnnext {
   position: absolute;
