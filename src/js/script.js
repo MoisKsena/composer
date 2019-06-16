@@ -1,3 +1,5 @@
+import { inherits } from "util";
+
 //burger menu
 
 function hideMenu() {
@@ -20,32 +22,46 @@ $('.main-nav__burger').click(function()
 
 
 //Swiper 
-
-var swiper1 = new Swiper('.j-swiper-preview', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: '.swiper-btnnext',
-    prevEl: '.swiper-btnprev',
-  },
-  // autoplay: {
-  //   delay: 10000,
-  // },
-  on:{
-    slideChange: function(){
-      let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
-      $(".img-description", ".img-descriptions").hide();
-      $(".img-description[data-image-id="+ imgId +"]", ".img-descriptions").fadeIn(3000);
+function initSwipers(){
+  var swiperPreview = new Swiper('.j-swiper-preview', {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-btnnext',
+      prevEl: '.swiper-btnprev',
+    },
+    // autoplay: {
+    //   delay: 10000,
+    // },
+    on:{
+      slideChange: function(){
+        let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
+        $(".img-description", ".img-descriptions").hide();
+        $(".img-description[data-image-id="+ imgId +"]", ".img-descriptions").fadeIn(3000);
+      }
     }
-  }
-});
+  });
 
 
-var swiper2 = new Swiper('.j-swiper-description', {
-  slidesPerView: 5,
+
+  
+  // var swiperDescription =  $('.j-swiper-description');
+  // swiperDescription.each(function(){
+  //   new Swiper($(this), {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30,
+  //     loop: true,
+  //     autoplay: {
+  //       delay: 2500,
+  //     },
+  //   });
+  // });
+
+var swiperDescription = new Swiper('.j-swiper-description', {
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -53,50 +69,17 @@ var swiper2 = new Swiper('.j-swiper-description', {
   },
 });
 
-// var swiper3 = new Swiper('#swiper-3', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   freeMode: true,
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });
+var swiperDescription3 = new Swiper('.j-swiper-description3', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+  },
+});
 
-// var swiper4 = new Swiper('.j-swiper-4', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   freeMode: true,
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });
+}
 
-// var swiper5 = new Swiper('.j-swiper-5', {
-//   slidesPerView: 3,
-//   spaceBetween: 15,
-//   freeMode: true,
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });
 
 //show textblock
 
@@ -175,7 +158,8 @@ pageModal.addEventListener('click', event => {
 
 (function($) {
 	$(document).ready(function() {
-
+    
+    initSwipers(); //swiper
 
   // обработчик нажатия на кнопку плей
   $('.music__player--button').click(function () {
