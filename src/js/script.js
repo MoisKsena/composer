@@ -52,7 +52,7 @@ function initSwipers(){
       spaceBetween: 15,
       slidesPerGroup: 1,
       loop: true,
-      loopFillGroupWithBlank: true,
+      //loopFillGroupWithBlank: true,
       autoplay: {
         delay: 2500,
       },
@@ -178,7 +178,7 @@ pageModal.addEventListener('click', event => {
       audio.pause();
       button.css('background-image', 'url(img/play-button-white.png)');
       button.css('background-size', 'cover');
-    } else {//debugger 
+    } else {
       audio.play();
       button.css('background-image', 'url(img/pause-button-white.png)');
       button.css('background-size', 'cover');
@@ -242,9 +242,14 @@ $("#feedbackForm").validate({
     },
     tel:{
       required: true,
-      minlength: 3
+      minlength: 11
     },
-  }
+    agree:"required"
+  },
+  message: {
+    name: "Введите своё имя",
+  },
+  agree: "согласитесь на обработку ваших персональных данных",
 });
 
 

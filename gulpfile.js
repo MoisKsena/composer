@@ -87,7 +87,8 @@ function copyVendorsJs() {
     'node_modules/svg4everybody/dist/svg4everybody.min.js',
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/swiper/dist/js/swiper.min.js',
-    'node_modules/jquery-validation/dist/jquery.validate.js'
+    'node_modules/jquery-validation/dist/jquery.validate.js',
+    'node_modules/jquery-validation/dist/jquery.validate.unobtrusive.js'
     ])
     .pipe(dest(`${dir.build}js/`));
 }
