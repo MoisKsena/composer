@@ -132,6 +132,7 @@
 
   &__formletter-checkin {
     display: flex;
+    position: relative;
     width: 100%;
     flex-direction: column;
     margin: 0;
@@ -201,7 +202,7 @@
     &--btn {
       width: 100%;
       height: 45px;
-      margin-bottom: 17px;
+      margin: 0;
       padding: 0;
       background-color: #FF4343;
       border: none;
@@ -220,29 +221,34 @@
       letter-spacing: 0.15em;
     }
 
-    &--confirm {
+    &--confirm,
+    &--confirm span {
       width: 100%;
+      margin-bottom: 17px;
+      padding: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 146.28%;
     }
   }
 
   &__form-success {
     display: none;
     position: absolute;
-    width: 90%;
+    width: 80%;
     height: 100vh;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     background-color: #fff;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    z-index: 100;
 
     @media (min-width: 768px) {
-      height: auto;
+      height: 604px;
     }
 
     &--text {
+      margin: 0;
       padding: 0 10px; 
       color: #4F4F4F;
     }
@@ -253,13 +259,14 @@
       padding-bottom: 30px;
       font-style: normal;
       font-weight: 300;
-      font-size: 42px;
+      font-size: 30px;
       line-height: 51px;
       text-align: center;
 
       @media (min-width: 768px) {
         padding-top: 100px;
         padding-bottom: 50px;
+        font-size: 42px;
       }
 
     }
@@ -272,11 +279,52 @@
       font-size: 18px;
       line-height: 180%;
       text-align: center;
+
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
     }
+
+    &--btn {
+      width: 70%;
+      height: 45px;
+      position: absolute;
+      bottom: 60px;
+      left: 15%;
+      background-color: #000;
+      border: none;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 146.28%;
+      letter-spacing: 0.3em;
+      color: #E0E0E0;
+      cursor: pointer;
+
+      @media (min-width: 768px) {
+        width: 288px;
+        left: 30%;
+        font-size: 15px;
+        bottom: 167px;
+      }
+    }
+  }
+
+  &__form-content {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
   }
 
   &__modal {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
   }
 }
 
@@ -291,7 +339,11 @@
   }
 }
 
-.error {
+.input-validation-error {
+  border: 2px solid $red;
+}
+
+.field-validation-error {
   color: $red;
 }
 
@@ -299,11 +351,7 @@
 
   &--open {
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+    
   }
 
   &__dialog {
@@ -323,8 +371,13 @@
     background-color: #fff;
 
     &--close {
+      position: absolute;
       margin: 0;
       padding: 0;
+      right: 10px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
       border: none;
       background-color: transparent;
     }
@@ -332,8 +385,8 @@
     &--close:before, &--close:after {
       position: absolute;
       content: ' ';
-      right: 50px;
-      top: 30px;
+      right: 14px;
+      top: 2px;
       height: 24px;
       width: 3px;
       background-color: #000;
@@ -348,12 +401,16 @@
       transform: rotate(-45deg);
     }
 
+    &--close:before:hover, &--close:after:hover {
+      background-color: $red;
+    }
+
     &--btn {
-      width: 64%;
+      width: 70%;
       height: 45px;
       position: absolute;
       bottom: 60px;
-      left: 20%;
+      left: 15%;
       background-color: #000;
       border: none;
       font-style: normal;
@@ -368,7 +425,12 @@
         width: 288px;
         left: 40%;
         font-size: 15px;
+        bottom: 117px;
       }
+    }
+
+    &--btn:hover {
+      color: $red;
     }
   }
 
@@ -376,7 +438,11 @@
     width: 70%;
     margin: 0 auto;
     padding-top: 97px;
-    padding-bottom: 140px;
+    padding-bottom: 165px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 300px;
+    }
 
     &--name {
       font-style: normal;

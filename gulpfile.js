@@ -88,7 +88,10 @@ function copyVendorsJs() {
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/swiper/dist/js/swiper.min.js',
     'node_modules/jquery-validation/dist/jquery.validate.js',
-    'node_modules/jquery-validation/dist/jquery.validate.unobtrusive.js'
+    '3rdparties/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js',
+    '3rdparties/inputmask/inputmask.min.js',
+    '3rdparties/inputmask/jquery.inputmask.js',
+    '3rdparties/inputmask/inputmask.binding.js',
     ])
     .pipe(dest(`${dir.build}js/`));
 }
