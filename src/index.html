@@ -11,6 +11,7 @@
   <!-- <script src="js/jquery.validate.js"></script> -->
   
   <title>Roman Seliverstov</title>
+
 </head>
 <body>
 
@@ -320,7 +321,7 @@
             <div class="music__player--controls">  
               <span class="music__player--title">1.&nbsp;&nbsp;Face of an Angel</span>
               <!-- <div class="progressbar"></div> -->
-              <audio src="mp3/RomanSeliverstov-FaceofanAngel.mp3" preload="metadata"></audio>
+              <audio src="mp3/RomanSeliverstov-FaceofanAngel.mp3" preload="metadata" ></audio>
               <span class="music__player--duration"></span>
             </div>
           </div>
@@ -423,11 +424,12 @@
           </a>
         </div>
       </div>
-      
-      <form method="get" id="feedbackForm" class="feedback__formletter">
+
+      <form method="post" id="feedbackForm" class="feedback__formletter" novalidate="novalidate">
         <label for="message">Вы можете оставить свое сообщение, и мы свяжемся с вами</label>
-        <textarea class="feedback__formletter-textarea" name="message" required></textarea>
-        <div class="feedback__formletter-checkin">
+        <textarea class="feedback__formletter-textarea" name="message" data-val-required='Необходимо написать отзыв'></textarea>
+        <span class="field-validation-valid" data-valmsg-for="message" data-valmsg-replace="true"></span>
+        <!-- <div class="feedback__formletter-checkin">
           <div class="feedback__formletter-personal" style="border: none;">
             <div class="feedback__formletter-personal--name">
               <label for="name">Имя</label> 
@@ -437,10 +439,10 @@
               <label for="tel">Телефон</label>
               <input id="tel" type="number" name="tel" class="feedback__formletter-personal--telfield" placeholder=" +7(___) ___ - __ - __" required/>
             </div> 
-          </div>
+          </div> -->
           <div class="feedback__formletter-consent">  
             <button class="feedback__formletter-consent--btn">отправить</button>
-            <span class="feedback__formletter-consent--confirm"><input type="checkbox" name="argee" id="agree" required/><a class="js-modal personal" href="">&nbsp;&nbsp;Подтверждаю согласие на обработку <span>персональных данных</span></a></span>  
+            <!-- <span class="feedback__formletter-consent--confirm"><input type="checkbox" name="argee" id="agree" required/><a class="js-modal personal" href="">&nbsp;&nbsp;Подтверждаю согласие на обработку <span>персональных данных</span></a></span>   -->
           </div> 
         </div>
       </form>
@@ -611,6 +613,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.validate.js"></script>
+  <script src="js/jquery.validate.unobtrusive.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>

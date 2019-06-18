@@ -82,7 +82,6 @@
  
     &--hover:hover {
       background-color: $red;
-      //border: 2px solid $red;
       border-radius: 20px;
       z-index: 1;
     }
@@ -104,12 +103,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding-top: 54px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 146.28%;
     color: #F2F2F2;
+
+    @media (min-width: 768px) {
+      padding-top: 0;
+    }
   }
 
   &__formletter-textarea {

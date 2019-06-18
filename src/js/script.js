@@ -20,10 +20,25 @@ $('.main-nav__burger').click(function()
 
 
 
-
+var swipers = {};
 //Swiper 
 function initSwipers(){
-  var swiperPreview = new Swiper('.j-swiper-preview', {
+  
+  $('.j-swiper-description').each(function(){
+    var imgId = $(this).parents('article').attr('data-image-id');
+    swipers[imgId] = new Swiper($(this), {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      slidesPerGroup: 1,
+      observer: true,
+      observeParents: true,
+      loop: true,
+      autoplay: true
+    });
+  });
+
+
+  swipers.main = new Swiper('.j-swiper-preview', {
     slidesPerView: 3,
     spaceBetween: 15,
     slidesPerGroup: 1,
@@ -38,53 +53,12 @@ function initSwipers(){
         let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
         $(".img-description", ".img-descriptions").hide();
         $(".img-description[data-image-id="+ imgId +"]", ".img-descriptions").fadeIn(3000);
+        if(swipers.current) swipers.current.autoplay.stop();
+        swipers.current = swipers[imgId]; 
+        if(!swipers.current.running) swipers.current.autoplay.start();
       }
     }
   });
-
-
-
-  
-  var swiperDescription =  $('.j-swiper-description');
-  swiperDescription.each(function(){
-    new Swiper($(this), {
-      slidesPerView: 3,
-      spaceBetween: 15,
-      slidesPerGroup: 1,
-      loop: true,
-      //loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 2500,
-      },
-    });
-  });
-
-// var swiperDescription = new Swiper('.j-swiper-description', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   loop: true,
-//   autoplay: {
-//     delay: 2500,
-//   },
-// });
-
-// var swiperDescription2 = new Swiper('.j-swiper-description2', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   loop: true,
-//   autoplay: {
-//     delay: 2500,
-//   },
-// });
-
-// var swiperDescription3 = new Swiper('.j-swiper-description3', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   loop: true,
-//   autoplay: {
-//     delay: 2500,
-//   },
-// });
 
 
 }
@@ -158,12 +132,28 @@ pageModal.addEventListener('click', event => {
 
 
 
+function initAudio()
+{
+  $('audio', '.music').each(function()
+  {
+    this.onloadedmetadata = function()
+    {
+      var duration = $('.music__player--duration', $(this).parent());
+  
+      var date = new Date((this.duration - this.currentTime) * 1000);
+      duration.html(date.getMinutes()+':'+date.getSeconds());
+    };
+  });
+
+
+}
 //mp3 treck
 
 (function($) {
 	$(document).ready(function() {
     
     initSwipers(); //swiper
+    initAudio();
 
   // обработчик нажатия на кнопку плей
   $('.music__player--button').click(function () {
@@ -200,7 +190,7 @@ $('.music__player audio').on('timeupdate', function() {
   var player = $(this).parent();
   var duration = $('.music__player--duration', player);
   
-  var date = new Date(audio.duration - audio.currentTime * 1000);
+  var date = new Date((audio.duration - audio.currentTime) * 1000);
   duration.html(date.getMinutes()+':'+date.getSeconds());
   
 
@@ -233,24 +223,24 @@ $('.music__player .progressbar').slider({
 
 //validation
 
-$("#feedbackForm").validate({
-  rules: {
-    message: "required",
-    name: {
-      required: true,
-      minlength: 3
-    },
-    tel:{
-      required: true,
-      minlength: 11
-    },
-    agree:"required"
-  },
-  message: {
-    name: "Введите своё имя",
-  },
-  agree: "согласитесь на обработку ваших персональных данных",
-});
+// $("#feedbackForm").validate({
+//   rules: {
+//     message: "required",
+//     name: {
+//       required: true,
+//       minlength: 3
+//     },
+//     tel:{
+//       required: true,
+//       minlength: 11
+//     },
+//     agree:"required"
+//   },
+//   message: {
+//     name: "Введите своё имя",
+//   },
+//   agree: "согласитесь на обработку ваших персональных данных",
+// });
 
 
     
