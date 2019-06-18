@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   width: 100%;
-  margin-top: 92px ;
+  margin-top: 36px ; //92px
   margin-bottom: 180px;
   padding: 0;
   flex-direction: column;
@@ -12,7 +12,7 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
-    margin-top: 222px;
+    margin-top: 166px; //222px
   }
 
   &__form {
