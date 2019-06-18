@@ -18,5 +18,16 @@
   }
 
   &__logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__logo-png {
+    width: 25%;
+    
+    padding-bottom: 57px;
+    object-fit: contain;
   }
 }

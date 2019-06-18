@@ -401,10 +401,6 @@
       transform: rotate(-45deg);
     }
 
-    &--close:before:hover, &--close:after:hover {
-      background-color: $red;
-    }
-
     &--btn {
       width: 70%;
       height: 45px;
