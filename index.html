@@ -92,7 +92,7 @@
             <div class="about__content-inner--redcube">
               <div class="about__content-inner--disc">
                   <p>Глава музыкального отдела кинокомпании BUBBLE STUDIOS.</p>
-                  <p>Со-основатель студии вирусного видео “Gaffy  Gaf Company”.</p>
+                  <p>Со-основатель студии вирусного видео «Gaffy Gaf Company».</p>
                   <p>Рекламное лицо немецкого звукотехнического бренда Elysia.</p>
                   <p class="about__content-text--link">Страница Романа Селиверстова на сайте <a href="https://www.kinopoisk.ru/name/2787666/"><u>kinopoisk.ru</u></a></p>
               </div>
@@ -397,7 +397,20 @@
 
   <section class="partners" id="partners">
     <h3 class="partners__name">Партнеры</h3>
-    <div class="partners__logo"></div>
+    <div class="partners__logo">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/uneversal.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+        <img class="partners__logo-png" src="img/Abbey-Road.png" alt="#">
+    </div>
   </section>
 
   <section class="feedback">
@@ -427,34 +440,51 @@
 
       <form method="post" id="feedbackForm" class="feedback__formletter" novalidate="novalidate">
         <label for="message">Вы можете оставить свое сообщение, и мы свяжемся с вами</label>
-        <textarea class="feedback__formletter-textarea" name="message" data-val-required='Необходимо оставить Ваше сообщение'></textarea>
+        <textarea class="feedback__formletter-textarea" name="message" data-val="true" data-val-required='Необходимо оставить Ваше сообщение'></textarea>
         <span class="field-validation-valid" data-valmsg-for="message" data-valmsg-replace="true"></span>
         <div class="feedback__formletter-checkin">
           <div class="feedback__formletter-personal" style="border: none;">
             <div class="feedback__formletter-personal--name">
               <label for="name">Имя</label> 
-              <input id="name" type="text" name="name" minlength="3" class="feedback__formletter-personal--namefield" placeholder=" введите Имя" required/>
+              <input id="name" type="text" name="name" minlength="3" data-val="true" data-val-required="Укажите ваше имя" class="feedback__formletter-personal--namefield" placeholder=" введите Имя" required/>
+              <span class="field-validation-valid" data-valmsg-for="name" data-valmsg-replace="true"></span>
             </div>
             <div class="feedback__formletter-personal--tel">
               <label for="tel">Телефон</label>
-              <input id="tel" type="number" name="tel" class="feedback__formletter-personal--telfield" placeholder=" +7(___) ___ - __ - __" required/>
+              <input id="tel" type="text" name="tel" class="feedback__formletter-personal--telfield" 
+                data-val="true" 
+                data-val-regex="Номер телефона должен быть задан в следующем формате: +7 (999) 999-99-99" data-val-regex-pattern="\s\+7 \((\d{3})\) (\d{3})-(\d{2})-(\d{2})"
+                data-val-required="Поле Телефон должно быть заполнено"
+                data-inputmask="'mask': ' +7 (999) 999-99-99'"
+                placeholder=" +7 (___) ___-__-__"
+                 />
+              <span class="field-validation-valid" data-valmsg-for="tel" data-valmsg-replace="true"></span>
             </div> 
           </div>
           <div class="feedback__formletter-consent">  
+            <span class="feedback__formletter-consent--confirm">
+              <input type="checkbox" name="agree" id="agree" data-val="true" data-val-brequired="Необходимо согласиться с условиями соглашения."/>
+              <label for="agree">&nbsp;&nbsp;Подтверждаю согласие на обработку <a class="js-modal personal" href="#" onclick="return false;"><span>персональных данных</span></a></label>
+              <p> <span class="field-validation-valid" data-valmsg-for="agree" data-valmsg-replace="true"></span> </p>
+            </span> 
             <button class="feedback__formletter-consent--btn">отправить</button>
-            <span class="feedback__formletter-consent--confirm"><input type="checkbox" name="argee" id="agree" required/><a class="js-modal personal" href="">&nbsp;&nbsp;Подтверждаю согласие на обработку <span>персональных данных</span></a></span>  
+             
           </div> 
         </div>
       </form>
 
       <div class="feedback__form-success">
         <button class="modal__content--close btn-close"></button>
-        <div class="feedback__form-success--text">
-          <p class="feedback__form-success--name">Ваше сообщение успешно отправлено!</p>
-          <p class="feedback__form-success--sign">Спасибо за ваше сообщение, наш представитель ответит вам в течении рабочего дня</p>
-          <p class="feedback__form-success--sign">наш представитель ответит вам в течении рабочего дня</p>
+        <div class="feedback__form-content">
+          
+          <div class="feedback__form-success--text">
+            <p class="feedback__form-success--name">Ваше сообщение успешно отправлено!</p>
+            <p class="feedback__form-success--sign">Спасибо за ваше сообщение, наш представитель ответит вам в течении рабочего дня</p>
+            <p class="feedback__form-success--sign">наш представитель ответит вам в течении рабочего дня</p>
+          </div>
+          <button class="feedback__form-success--btn btn-close">ВЕРНУТЬСЯ НА САЙТ</button>
         </div>
-        <button class="modal__content--btn btn-close">ВЕРНУТЬСЯ НА САЙТ</button>
+        
       </div>
 
       <div class="modal">
@@ -614,10 +644,25 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.validate.js"></script>
   <script src="js/jquery.validate.unobtrusive.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/jquery.inputmask.js"></script>
+  <script src="js/inputmask.binding.js"></script>  
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script src="js/script.js"></script>
+  <script type="text/javascript" language="javascript">
+    jQuery.validator.unobtrusive.adapters.add("brequired", function (options) {
+      //b-required for checkboxes
+      if (options.element.tagName.toUpperCase() == "INPUT" && options.element.type.toUpperCase() == "CHECKBOX") {
+          //setValidationValues(options, "required", true);
+          options.rules["required"] = true;
+          if (options.message) {
+              options.messages["required"] = options.message;
+          }
+      }
+    });
+  </script>
 
 </body>
 </html>
