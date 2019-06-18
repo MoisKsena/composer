@@ -79,12 +79,6 @@
       margin: 0;
       padding-right: 15px;
     }
- 
-    &--hover:hover {
-      background-color: $red;
-      border-radius: 20px;
-      z-index: 1;
-    }
 
     &--whatsapp {
       margin: 0;
@@ -95,6 +89,14 @@
       margin: 0;
       padding: 0;
     }
+  }
+
+  &__form-icons svg {
+    fill: #fff;
+  }
+
+  &__form-icons svg:hover {
+    fill: $red;
   }
 
   &__formletter {

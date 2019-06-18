@@ -46,12 +46,12 @@
     width: 200px;
     position: absolute;
     top: 60px;
-    right: 12px;
+    right: 0;
     padding: 10px;
-    background-color: #fff;
+    background-color: #000;
     line-height: 1.5;
     opacity: 0.9;
-    z-index: 2;
+    z-index: 3;
 
     @media (min-width: 768px) {
       display: none;
@@ -82,7 +82,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color:#000;
+    color:#fff;
     font-weight: 500;
   }
 
@@ -123,8 +123,7 @@
   &__icons {
     display: none;
 
-    @media (min-width: 769px) {
-      
+    @media (min-width: 769px) { 
       display: flex;
       position: absolute;
       margin: 0;
@@ -142,6 +141,14 @@
       margin: 0;
       padding-right: 35px;
     }
+  }
+
+  &__icons svg {
+    fill: #fff;
+  }
+
+  &__icons svg:hover {
+    fill: $red;
   }
 }
 

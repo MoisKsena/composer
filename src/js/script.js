@@ -18,10 +18,10 @@ $('.main-nav__burger').click(function()
   });
 
 
-
+//Swiper 
 
 var swipers = {};
-//Swiper 
+
 function initSwipers(){
   
   $('.j-swiper-description').each(function(){
@@ -102,14 +102,6 @@ closeModal.on('click',event => {
   closePopup();
 });
 
-// var closeModal = document.querySelector('.btn-close');
-// closeModal.addEventListener('click', event => {
-//   event.preventDefault();
-
-//   closePopup();
-
-// });
-
 var pageModal = document.querySelector(".overlay");
 pageModal.addEventListener('click', event => {
     var popUp = document.querySelector(".modal__content");
@@ -146,17 +138,8 @@ function initAudio()
   });
 
 
-}
-//mp3 treck
-
-(function($) {
-	$(document).ready(function() {
-    
-    initSwipers(); //swiper
-    initAudio();
-
-  // обработчик нажатия на кнопку плей
-  $('.music__player--button').click(function () {
+   // обработчик нажатия на кнопку плей
+   $('.music__player--button').click(function () {
     var parent = $(this).parent();
     
     var button = $(this);
@@ -221,26 +204,37 @@ $('.music__player .progressbar').slider({
   }
 });
 
+}
+
+
+(function($) {
+	$(document).ready(function() {
+    
+    initSwipers(); //swiper
+    initAudio(); //mp3 treck
+
+ 
+
 //validation
 
-// $("#feedbackForm").validate({
-//   rules: {
-//     message: "required",
-//     name: {
-//       required: true,
-//       minlength: 3
-//     },
-//     tel:{
-//       required: true,
-//       minlength: 11
-//     },
-//     agree:"required"
-//   },
-//   message: {
-//     name: "Введите своё имя",
-//   },
-//   agree: "согласитесь на обработку ваших персональных данных",
-// });
+$("#feedbackForm").validate({
+  rules: {
+    message: "required",
+    name: {
+      required: true,
+      minlength: 3
+    },
+    tel:{
+      required: true,
+      minlength: 11
+    },
+    agree:"required"
+  },
+  message: {
+    name: "Введите своё имя",
+  },
+  agree: "согласитесь на обработку ваших персональных данных",
+});
 
 
     

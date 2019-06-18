@@ -16,8 +16,7 @@
     margin: 0;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center; 
-    z-index: 1;
+    align-items: center;
 
     @media (min-width: 769px) {
       padding-top: 30px;
@@ -29,6 +28,7 @@
     align-items: baseline;
     justify-content: flex-end;
     padding-top: 167px;
+    margin-top: 0;
     margin: 0;  
     // background-image: url(../img/Presentation.png);
     // background-repeat: no-repeat;
@@ -37,6 +37,7 @@
 
     @media (min-width: 768px) {
       padding-top: 0;
+      margin-top: 30px;
     }
 
     &--name {
@@ -71,7 +72,7 @@
         position: relative;
         top: 0;
         right: 0;
-        z-index: 1;
+        z-index: -1;
       }
     }
   }
@@ -90,6 +91,8 @@
       width: 100%;
       object-fit: cover;
       bottom: 0;
+      z-index: -2
+      ;
 
       @media (min-width: 768px) { 
         bottom: 0;
