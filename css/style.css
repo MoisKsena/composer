@@ -500,6 +500,12 @@ svg path {
     margin: 0; }
     @media (min-width: 768px) {
       .header__headline {
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding-top: 0;
         margin-top: 30px; } }
     .header__headline--name {
