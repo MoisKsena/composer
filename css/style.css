@@ -1190,6 +1190,24 @@ svg path {
   @media (min-width: 768px) {
     .partners {
       width: 67%; } }
+  .partners__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .partners__logo-png {
+    width: 25%;
+    padding-bottom: 57px;
+    -o-object-fit: contain;
+       object-fit: contain; }
 
 .feedback {
   position: relative;
@@ -1563,8 +1581,6 @@ svg path {
   .modal__content--close:after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  .modal__content--close:before:hover, .modal__content--close:after:hover {
-    background-color: #FF4343; }
   .modal__content--btn {
     width: 70%;
     height: 45px;
