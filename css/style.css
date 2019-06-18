@@ -481,8 +481,7 @@ svg path {
         flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    z-index: 1; }
+            align-items: center; }
     @media (min-width: 769px) {
       .header__menu {
         padding-top: 30px; } }
@@ -497,10 +496,12 @@ svg path {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-top: 167px;
+    margin-top: 0;
     margin: 0; }
     @media (min-width: 768px) {
       .header__headline {
-        padding-top: 0; } }
+        padding-top: 0;
+        margin-top: 30px; } }
     .header__headline--name {
       margin: 0;
       padding-top: 0;
@@ -531,13 +532,14 @@ svg path {
           position: relative;
           top: 0;
           right: 0;
-          z-index: 1; } }
+          z-index: -1; } }
   .header__bcg--img {
     position: absolute;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    bottom: 0; }
+    bottom: 0;
+    z-index: -2; }
     @media (min-width: 768px) {
       .header__bcg--img {
         bottom: 0; } }
@@ -591,12 +593,12 @@ svg path {
     width: 200px;
     position: absolute;
     top: 60px;
-    right: 12px;
+    right: 0;
     padding: 10px;
-    background-color: #fff;
+    background-color: #000;
     line-height: 1.5;
     opacity: 0.9;
-    z-index: 2; }
+    z-index: 3; }
     @media (min-width: 768px) {
       .main-nav__burger-menu {
         display: none; } }
@@ -626,7 +628,7 @@ svg path {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: 500; }
   .main-nav__burger-link:hover {
     margin: 0;
@@ -676,6 +678,10 @@ svg path {
     .main-nav__icons--instagram {
       margin: 0;
       padding-right: 35px; }
+  .main-nav__icons svg {
+    fill: #fff; }
+  .main-nav__icons svg:hover {
+    fill: #FF4343; }
 
 .close:before, .close:after {
   position: absolute;
@@ -1268,16 +1274,16 @@ svg path {
     .feedback__form-icons--vk {
       margin: 0;
       padding-right: 15px; }
-    .feedback__form-icons--hover:hover {
-      background-color: #FF4343;
-      border-radius: 20px;
-      z-index: 1; }
     .feedback__form-icons--whatsapp {
       margin: 0;
       padding-right: 15px; }
     .feedback__form-icons--facebook {
       margin: 0;
       padding: 0; }
+  .feedback__form-icons svg {
+    fill: #fff; }
+  .feedback__form-icons svg:hover {
+    fill: #FF4343; }
   .feedback__formletter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1290,12 +1296,15 @@ svg path {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding-top: 54px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 146.28%;
     color: #F2F2F2; }
+    @media (min-width: 768px) {
+      .feedback__formletter {
+        padding-top: 0; } }
   .feedback__formletter-textarea {
     width: 100%;
     height: 130px;
@@ -1647,7 +1656,6 @@ svg path {
           width: 33%; } }
   .footer__text {
     width: 100%;
-    height: 117px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
