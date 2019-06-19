@@ -1260,26 +1260,46 @@ svg path {
   @media (min-width: 768px) {
     .partners {
       width: 67%; } }
+  .partners__name {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px; }
+    @media (min-width: 768px) {
+      .partners__name {
+        font-size: 42px; } }
   .partners__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 0;
+    padding: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (min-width: 768px) {
+      .partners__logo {
+        margin-top: 0;
+        padding-top: 90px; } }
   .partners__logo-png {
-    width: 50%;
-    margin: 0;
+    width: 40%;
+    margin-bottom: -100px;
     padding-right: 15px;
-    padding-bottom: 56px;
     -o-object-fit: contain;
        object-fit: contain; }
+    @media (min-width: 800px) {
+      .partners__logo-png {
+        margin-bottom: -64px; } }
     @media (min-width: 768px) {
       .partners__logo-png {
         width: 25%;
@@ -1346,10 +1366,10 @@ svg path {
       letter-spacing: 0.02em; }
       @media (min-width: 768px) {
         .feedback__form-headline--name {
-          padding-top: 44px;
-          padding-bottom: 26px;
+          padding-top: 30px;
+          padding-bottom: 0;
           font-size: 24px;
-          line-height: 193.78%; } }
+          line-height: 50px; } }
     .feedback__form-headline--contacts {
       margin: 0;
       padding-bottom: 28px;
@@ -1361,8 +1381,7 @@ svg path {
       @media (min-width: 768px) {
         .feedback__form-headline--contacts {
           padding-bottom: 38px;
-          font-size: 24px;
-          line-height: 193.78%; } }
+          font-size: 24px; } }
   .feedback__form-icons {
     margin: 0;
     padding: 0; }
