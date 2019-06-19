@@ -1080,7 +1080,10 @@ svg path {
   background-image: url(../img/music.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom 0px right 0px; }
+  background-position: bottom 150px right 0px; }
+  @media (min-width: 768px) {
+    .music {
+      background-position: bottom 0px right 0px; } }
   .music__inner {
     width: 75%;
     margin: 0 auto;
@@ -1170,8 +1173,11 @@ svg path {
           font-size: 18px; } }
   .music__logo {
     margin-top: 82px;
-    margin-bottom: 220px;
+    margin-bottom: 102px;
     padding: 0; }
+    @media (min-width: 768px) {
+      .music__logo {
+        margin-bottom: 220px; } }
     .music__logo--img img:hover {
       margin: 0;
       padding: 0;
