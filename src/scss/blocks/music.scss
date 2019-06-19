@@ -8,7 +8,11 @@
   background-image: url(../img/music.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom 0px right 0px;
+  background-position: bottom 150px right 0px;
+
+  @media (min-width: 768px) {
+    background-position: bottom 0px right 0px;
+  }
 
   &__inner {
     width: 75%;
@@ -105,8 +109,12 @@
 
   &__logo {
     margin-top: 82px;
-    margin-bottom: 220px;
+    margin-bottom: 102px;
     padding: 0;
+
+    @media (min-width: 768px) {
+      margin-bottom: 220px;
+    }
 
     &--img img:hover {
       margin: 0;
