@@ -462,7 +462,11 @@ svg path {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 82px; }
+  margin-bottom: 82px;
+  background-image: url(../img/Presentation.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 0px left 50%; }
   @media (min-width: 768px) {
     .header {
       margin-bottom: 120px; } }
@@ -538,7 +542,7 @@ svg path {
           position: relative;
           top: 0;
           right: 0;
-          z-index: -1; } }
+          z-index: 0; } }
   .header__bcg--img {
     position: absolute;
     width: 100%;
@@ -1835,7 +1839,6 @@ svg path {
     color: #fff; }
     @media (min-width: 769px) {
       .footer__text {
-        height: 146px;
         padding-left: 60px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
