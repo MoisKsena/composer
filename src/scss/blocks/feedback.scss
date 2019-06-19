@@ -148,7 +148,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       flex-direction: row;
     }
 
@@ -157,7 +157,7 @@
       margin-right: 0;
       padding-bottom: 36px;
 
-      @media (min-width: 768px) {
+      @media (min-width: 800px) {
         margin-right: 23px;
         padding-bottom: 0;
       }
@@ -195,7 +195,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       width: 48%;
     }
     
@@ -250,12 +250,12 @@
     &--text {
       margin: 0;
       padding: 0 10px; 
+      padding-bottom: 66px;
       color: #4F4F4F;
     }
 
     &--name {
       margin: 0;
-      padding-top: 80px;
       padding-bottom: 30px;
       font-style: normal;
       font-weight: 300;
@@ -264,8 +264,7 @@
       text-align: center;
 
       @media (min-width: 768px) {
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 118px;
         font-size: 42px;
       }
 
@@ -288,9 +287,6 @@
     &--btn {
       width: 70%;
       height: 45px;
-      position: absolute;
-      bottom: 60px;
-      left: 15%;
       background-color: #000;
       border: none;
       font-style: normal;
@@ -303,9 +299,7 @@
 
       @media (min-width: 768px) {
         width: 288px;
-        left: 30%;
         font-size: 15px;
-        bottom: 167px;
       }
     }
   }
@@ -313,9 +307,11 @@
   &__form-content {
     display: flex;
     position: relative;
+    flex-direction: column;
     margin: 0 auto;
     padding: 0;
     justify-content: center;
+    align-items: center;
   }
 
   &__modal {
@@ -366,6 +362,7 @@
     margin: 0 auto;
     position: relative;
     flex-direction: column;
+    align-items: center;
     color: black;
     padding: 10px;
     background-color: #fff;
@@ -404,9 +401,7 @@
     &--btn {
       width: 70%;
       height: 45px;
-      position: absolute;
-      bottom: 60px;
-      left: 15%;
+      margin-bottom: 60px;
       background-color: #000;
       border: none;
       font-style: normal;
@@ -419,9 +414,8 @@
 
       @media (min-width: 768px) {
         width: 288px;
-        left: 40%;
         font-size: 15px;
-        bottom: 117px;
+        margin-bottom: 117px;
       }
     }
 
@@ -434,10 +428,10 @@
     width: 70%;
     margin: 0 auto;
     padding-top: 97px;
-    padding-bottom: 165px;
+    padding-bottom: 70px;
 
     @media (min-width: 768px) {
-      padding-bottom: 300px;
+      padding-bottom: 140px;
     }
 
     &--name {
