@@ -709,6 +709,8 @@ svg path {
     line-height: 146.28%;
     letter-spacing: 0.27em;
     text-transform: uppercase; }
+  .main-nav__link:hover {
+    color: #FF4343; }
   .main-nav__link {
     list-style: none;
     color: white;
