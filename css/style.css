@@ -1381,7 +1381,7 @@ svg path {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       .feedback__formletter-personal {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -1391,7 +1391,7 @@ svg path {
       width: 100%;
       margin-right: 0;
       padding-bottom: 36px; }
-      @media (min-width: 768px) {
+      @media (min-width: 800px) {
         .feedback__formletter-personal--name {
           margin-right: 23px;
           padding-bottom: 0; } }
@@ -1424,7 +1424,7 @@ svg path {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       .feedback__formletter-consent {
         width: 48%; } }
     .feedback__formletter-consent--btn {
@@ -1469,10 +1469,10 @@ svg path {
     .feedback__form-success--text {
       margin: 0;
       padding: 0 10px;
+      padding-bottom: 66px;
       color: #4F4F4F; }
     .feedback__form-success--name {
       margin: 0;
-      padding-top: 80px;
       padding-bottom: 30px;
       font-style: normal;
       font-weight: 300;
@@ -1481,8 +1481,7 @@ svg path {
       text-align: center; }
       @media (min-width: 768px) {
         .feedback__form-success--name {
-          padding-top: 100px;
-          padding-bottom: 50px;
+          padding-bottom: 118px;
           font-size: 42px; } }
     .feedback__form-success--sign {
       margin: 0;
@@ -1498,9 +1497,6 @@ svg path {
     .feedback__form-success--btn {
       width: 70%;
       height: 45px;
-      position: absolute;
-      bottom: 60px;
-      left: 15%;
       background-color: #000;
       border: none;
       font-style: normal;
@@ -1513,19 +1509,24 @@ svg path {
       @media (min-width: 768px) {
         .feedback__form-success--btn {
           width: 288px;
-          left: 30%;
-          font-size: 15px;
-          bottom: 167px; } }
+          font-size: 15px; } }
   .feedback__form-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
     padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .feedback__modal {
     display: none;
     position: absolute;
@@ -1572,6 +1573,9 @@ svg path {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
   padding: 10px;
   background-color: #fff; }
@@ -1603,9 +1607,7 @@ svg path {
   .modal__content--btn {
     width: 70%;
     height: 45px;
-    position: absolute;
-    bottom: 60px;
-    left: 15%;
+    margin-bottom: 60px;
     background-color: #000;
     border: none;
     font-style: normal;
@@ -1618,9 +1620,8 @@ svg path {
     @media (min-width: 768px) {
       .modal__content--btn {
         width: 288px;
-        left: 40%;
         font-size: 15px;
-        bottom: 117px; } }
+        margin-bottom: 117px; } }
   .modal__content--btn:hover {
     color: #FF4343; }
 
@@ -1628,10 +1629,10 @@ svg path {
   width: 70%;
   margin: 0 auto;
   padding-top: 97px;
-  padding-bottom: 165px; }
+  padding-bottom: 70px; }
   @media (min-width: 768px) {
     .modal__content-text {
-      padding-bottom: 300px; } }
+      padding-bottom: 140px; } }
   .modal__content-text--name {
     font-style: normal;
     font-weight: 500;
