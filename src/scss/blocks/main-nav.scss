@@ -4,12 +4,6 @@
   padding: 0;
   justify-content: flex-end;
   align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 146.28%;
-  letter-spacing: 0.27em;
-  text-transform: uppercase;
 
   &__burger {
     display: none;
@@ -43,14 +37,15 @@
 
   &__burger-menu {
     display: inline-block;
-    width: 200px;
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 60px;
     right: 0;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     background-color: #000;
     line-height: 1.5;
-    opacity: 0.9;
     z-index: 3;
 
     @media (min-width: 768px) {
@@ -59,23 +54,21 @@
   }
 
   &__burger-list {
-    display: none;
-
-    @media (max-width: 768px) {
-      display: flex;
-      padding: 0;
-      margin: 0;
-      flex-direction: column;
-      align-items: flex-end;
-    }
+    display: flex; 
+    margin: 0;
+    padding-bottom: 30px;
+    flex-direction: column;
   }
 
   &__burger-item {
     margin: 0;
-    padding-bottom: 20px;
-    padding-right: 22px;
-    padding-left: 20px;
-    font-size: 20px;
+    padding-bottom: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 146.28%;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
   }
 
   &__burger-link {
@@ -93,6 +86,76 @@
     color: $red;
     font-weight: 700;
   }
+
+  &__burger-connection {
+    margin: 0;
+    padding-left: 43px;
+
+    &--sign {
+      margin: 0;
+      padding-bottom: 30px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      color: $red;
+    }
+
+    &--sign p {
+      margin: 0;
+      padding: 0;
+      line-height: 150%;
+    }
+
+    &--name {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    &--contacts {
+      margin: 0;
+      padding-bottom: 40px;
+      color: #fff;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 160%;
+    }
+  }
+  &__burger-address {
+    margin: 0;
+    padding-left: 43px;
+    padding-top: 56px;
+
+    &--headline {
+      margin: 0;
+      padding-bottom: 30px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      color: $red;
+    }
+
+    &--headline p {
+      margin: 0;
+      padding: 0;
+      line-height: 150%;
+    }
+
+    &--text {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 160%;
+    }
+  }
   
   &__list {
     display: none;
@@ -107,6 +170,12 @@
   
   &__item {
     margin-right: 54px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 146.28%;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
 
     &--active {
     }

@@ -210,6 +210,7 @@
       font-weight: 500;
       font-size: 15px;
       letter-spacing: 0.15em;
+      text-transform: uppercase;
       color: white;
     }
 
@@ -425,7 +426,7 @@
   }
 
   &__content-text {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding-top: 97px;
     padding-bottom: 70px;
@@ -454,10 +455,10 @@
     }
 
     &--paragraph {
-      text-align: left;
       font-style: normal;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 24px;
+      line-height: 193.78%;
 
       @media (min-width: 768px) {
        
