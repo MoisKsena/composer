@@ -52,6 +52,8 @@ function initSwipers(){
       slideChange: function(){
         let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
         $(".img-description", ".img-descriptions").hide();
+        //$("#ytplayer", ".img-descriptions").stopVideo();
+       // $('#ytplayer').get(0).stopVideo();
         $(".img-description[data-image-id="+ imgId +"]", ".img-descriptions").fadeIn(3000);
         if(swipers.current) swipers.current.autoplay.stop();
         swipers.current = swipers[imgId]; 
