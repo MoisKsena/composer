@@ -176,9 +176,10 @@
     line-height: 146.28%;
     letter-spacing: 0.27em;
     text-transform: uppercase;
+  }
 
-    &--active {
-    }
+  &__link:hover {
+    color: $red;
   }
 
   &__link {
