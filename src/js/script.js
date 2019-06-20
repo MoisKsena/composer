@@ -43,7 +43,7 @@ function initSwipers(){
     spaceBetween: 15,
     slidesPerGroup: 1,
     loop: true,
-    loopFillGroupWithBlank: true,
+    //loopFillGroupWithBlank: true,
     navigation: {
       nextEl: '.swiper-btnnext',
       prevEl: '.swiper-btnprev',
@@ -52,13 +52,11 @@ function initSwipers(){
       slideChange: function(){
         let imgId = $('img', this.slides[this.realIndex]).attr('data-imageid');
         $(".img-description", ".img-descriptions").hide();
-        //$("#ytplayer", ".img-descriptions").stopVideo();
-       // $('#ytplayer').get(0).stopVideo();
-        $(".img-description[data-image-id="+ imgId +"]", ".img-descriptions").fadeIn(3000);
+        $(".img-description[data-image-id="+ imgId +"]", ".img-descriptions").fadeIn(2000);
         if(swipers.current) swipers.current.autoplay.stop();
         swipers.current = swipers[imgId]; 
         if(!swipers.current.running) swipers.current.autoplay.start();
-      }
+      } 
     }
   });
 
@@ -116,16 +114,6 @@ pageModal.addEventListener('click', event => {
   });
 
 
-//Скрыть/показать элемент по клику 
-
-// $(document).ready(function() {
-//   $('.projects__demo').on('click', '.projects__demo-click', function() {
-//     $(this).toggleClass('red').siblings('.projects__demo-slide').slideToggle(0);
-//   });
-// });
-
-
-
 function initAudio()
 {
   $('audio', '.music').each(function()
@@ -143,7 +131,6 @@ function initAudio()
    // обработчик нажатия на кнопку плей
    $('.music__player--button').click(function () {
     var parent = $(this).parent();
-    
     var button = $(this);
     var audio = $('audio', parent[0])[0];
     var duration = $('.music__player--duration', parent);
