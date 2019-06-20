@@ -3,14 +3,19 @@
   height: 100vh;
   flex-direction: column;
   margin-bottom: 82px ;
-  background-image: url(../img/Presentation.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom 0px left 50%;
+  background-image: none;
+  // background-image: url(../img/Presentation.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: bottom 0px left 50%;
  
 
   @media (min-width: 768px) {
     margin-bottom: 120px;
+    background-image: url(../img/Presentation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 0px left 50%;
   }
 
   &__menu {
@@ -80,25 +85,25 @@
   }
 
   &__bcg {
-    // margin: 0;
-    // padding: 0;
-    // height: 680px;
-    // background-image: url(../img/Presentation.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: bottom 0px left 0px;
+    margin: 0;
+    padding: 0;
+    height: 680px;
+    background-image: url(../img/Presentation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 0px left 50%;
+
+    @media (min-width: 768px) { 
+     // bottom: 0;
+      background-image: none;
+    }
   
     &--img {
       position: absolute;
       width: 100%;
       object-fit: cover;
       bottom: 0;
-      z-index: -2
-      ;
-
-      @media (min-width: 768px) { 
-        bottom: 0;
-      }
+      z-index: -2; 
     }
   }
   

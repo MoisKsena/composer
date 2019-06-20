@@ -118,10 +118,10 @@ function initAudio()
 {
   $('audio', '.music').each(function()
   {
-    this.onloadedmetadata = function()
+    this.onloadedmetadata = function() 
     {
       var duration = $('.music__player--duration', $(this).parent());
-  
+      
       var date = new Date((this.duration - this.currentTime) * 1000);
       duration.html(date.getMinutes()+':'+date.getSeconds());
     };
@@ -195,7 +195,7 @@ $('.music__player .progressbar').slider({
 
 }
 
-
+//validation
 function initFormSubmitHandler()
 {
   $("form").data("validator").settings.submitHandler = function()
