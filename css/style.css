@@ -1362,7 +1362,6 @@ svg path {
       font-style: normal;
       font-weight: 500;
       font-size: 20px;
-      line-height: 33px;
       letter-spacing: 0.02em; }
       @media (min-width: 768px) {
         .feedback__form-headline--name {
@@ -1376,7 +1375,6 @@ svg path {
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
-      line-height: 33px;
       letter-spacing: 0.02em; }
       @media (min-width: 768px) {
         .feedback__form-headline--contacts {
