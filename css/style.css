@@ -463,13 +463,14 @@ svg path {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 82px;
-  background-image: url(../img/Presentation.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom 0px left 50%; }
+  background-image: none; }
   @media (min-width: 768px) {
     .header {
-      margin-bottom: 120px; } }
+      margin-bottom: 120px;
+      background-image: url(../img/Presentation.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom 0px left 50%; } }
   .header__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -543,16 +544,24 @@ svg path {
           top: 0;
           right: 0;
           z-index: 0; } }
-  .header__bcg--img {
-    position: absolute;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    bottom: 0;
-    z-index: -2; }
+  .header__bcg {
+    margin: 0;
+    padding: 0;
+    height: 680px;
+    background-image: url(../img/Presentation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 0px left 50%; }
     @media (min-width: 768px) {
-      .header__bcg--img {
-        bottom: 0; } }
+      .header__bcg {
+        background-image: none; } }
+    .header__bcg--img {
+      position: absolute;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      bottom: 0;
+      z-index: -2; }
 
 .main-nav {
   display: -webkit-box;
