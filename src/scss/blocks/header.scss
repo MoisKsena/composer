@@ -7,10 +7,6 @@
  
   @media (min-width: 768px) {
     margin-bottom: 120px;
-    // background-image: url(../img/Presentation.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: bottom 0px left 50%;
   }
 
   &__menu {
@@ -62,6 +58,7 @@
         font-size: 110px;
       }
     }
+
     &--cube {
       position: absolute;
       right: 0;
@@ -87,10 +84,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 0px left 50%;
-    // background-image: url(../img/fon5.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: bottom 0px left 50%;
 
     @media (min-width: 860px) {
       background-image: none;
@@ -105,9 +98,7 @@
 
       @media (min-width: 860px) { 
         background-image: none;
-        
       }
     }
   }
-  
 }
