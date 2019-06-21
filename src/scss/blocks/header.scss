@@ -4,18 +4,13 @@
   flex-direction: column;
   margin-bottom: 82px ;
   background-image: none;
-  // background-image: url(../img/Presentation.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: bottom 0px left 50%;
  
-
   @media (min-width: 768px) {
     margin-bottom: 120px;
-    background-image: url(../img/Presentation.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom 0px left 50%;
+    // background-image: url(../img/Presentation.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: bottom 0px left 50%;
   }
 
   &__menu {
@@ -92,9 +87,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 0px left 50%;
+    // background-image: url(../img/fon5.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: bottom 0px left 50%;
 
-    @media (min-width: 768px) { 
-     // bottom: 0;
+    @media (min-width: 860px) {
       background-image: none;
     }
   
@@ -104,6 +102,11 @@
       object-fit: cover;
       bottom: 0;
       z-index: -2; 
+
+      @media (min-width: 860px) { 
+        background-image: none;
+        
+      }
     }
   }
   
