@@ -113,7 +113,8 @@ pageModal.addEventListener('click', event => {
     };
   });
 
-
+var previousPlayer = null;
+var previousButton = null;
 function initAudio()
 {
   $('audio', '.music').each(function()
@@ -135,6 +136,13 @@ function initAudio()
     var audio = $('audio', parent[0])[0];
     var duration = $('.music__player--duration', parent);
     
+    if(!!previousPlayer && previousPlayer != audio) 
+    {
+      previousPlayer.pause();
+      previousButton.css('background-image', 'url(img/play-button-white.png)');
+      previousButton.css('background-size', 'cover');
+    }
+
     // переключение состояния плеера и смена картинки на кнопке - плей или пауза //'url(/images/play.png)'   'url(/images/pause.png)' 
     if (audio.paused == false) {
       audio.pause();
@@ -142,6 +150,8 @@ function initAudio()
       button.css('background-size', 'cover');
     } else {
       audio.play();
+      previousPlayer = audio;
+      previousButton = button;
       button.css('background-image', 'url(img/pause-button-white.png)');
       button.css('background-size', 'cover');
     }  
