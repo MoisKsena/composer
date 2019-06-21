@@ -466,11 +466,7 @@ svg path {
   background-image: none; }
   @media (min-width: 768px) {
     .header {
-      margin-bottom: 120px;
-      background-image: url(../img/Presentation.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: bottom 0px left 50%; } }
+      margin-bottom: 120px; } }
   .header__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -552,7 +548,7 @@ svg path {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 0px left 50%; }
-    @media (min-width: 768px) {
+    @media (min-width: 860px) {
       .header__bcg {
         background-image: none; } }
     .header__bcg--img {
@@ -562,6 +558,9 @@ svg path {
          object-fit: cover;
       bottom: 0;
       z-index: -2; }
+      @media (min-width: 860px) {
+        .header__bcg--img {
+          background-image: none; } }
 
 .main-nav {
   display: -webkit-box;
