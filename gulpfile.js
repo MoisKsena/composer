@@ -23,6 +23,12 @@ const ghpages = require('gh-pages');
 const path = require('path');
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
+var concat = require('gulp-concat');
+
+
+
+
+
 
 function styles() {
   return src(`${dir.src}scss/style.scss`)
@@ -83,19 +89,29 @@ exports.copyFonts = copyFonts;
 
 function copyVendorsJs() {
   return src([
-    'node_modules/picturefill/dist/picturefill.min.js',
-    'node_modules/svg4everybody/dist/svg4everybody.min.js',
     'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/swiper/dist/js/swiper.min.js',
     'node_modules/jquery-validation/dist/jquery.validate.js',
     '3rdparties/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js',
+    '3rdparties/jquery-ui/jquery-ui.js',
     '3rdparties/inputmask/inputmask.min.js',
     '3rdparties/inputmask/jquery.inputmask.js',
     '3rdparties/inputmask/inputmask.binding.js',
+    'node_modules/swiper/dist/js/swiper.min.js',
+    'node_modules/svg4everybody/dist/svg4everybody.min.js',
     ])
+    .pipe(concat('bundle.js')) 
+    .pipe(uglify())
     .pipe(dest(`${dir.build}js/`));
 }
 exports.copyVendorsJs = copyVendorsJs;
+
+
+exports.bundle = function()
+{
+  return src(dest(`${dir.build}js/*.js`)) .pipe(concat('file123.js')) .pipe(gulp.dest('./toPutBundledJsHere/'));
+}
+
+
 
 function copyVendorsCss() {
   return src([
