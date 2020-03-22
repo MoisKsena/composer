@@ -93,14 +93,11 @@ function copyVendorsJs() {
     'node_modules/jquery-validation/dist/jquery.validate.js',
     '3rdparties/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js',
     '3rdparties/jquery-ui/jquery-ui.js',
-    '3rdparties/inputmask/inputmask.min.js',
     '3rdparties/inputmask/jquery.inputmask.js',
-    '3rdparties/inputmask/inputmask.binding.js',
     'node_modules/swiper/dist/js/swiper.min.js',
     'node_modules/svg4everybody/dist/svg4everybody.min.js',
     ])
     .pipe(concat('bundle.js')) 
-    .pipe(uglify())
     .pipe(dest(`${dir.build}js/`));
 }
 exports.copyVendorsJs = copyVendorsJs;
