@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.0",
-    "jquery-validation": "^1.19.1",
+    "jquery-validation": "^1.19.4",
     "normalize.css": "^8.0.1",
     "picturefill": "^3.0.3",
     "svg4everybody": "^2.1.9",
